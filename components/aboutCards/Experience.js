@@ -9,14 +9,14 @@ const Experience = () => {
   return (
     <motion.div 
         className={ hover 
-            ? "border border-slate-100 relative bg-rose-900/40 p-8 rounded-xl shadow-2xl shadow-slate-800 cursor-pointer transition-all duration-500 ease-linear animate-web h-[320px]"
-            : "border border-slate-700 relative bg-slate-800/40 p-8 rounded-xl cursor-pointer transition-all duration-500 ease-linear shadow-2xl shadow-slate-900 animate-web overflow-hidden h-[320px]"
+            ? "border border-slate-100 relative bg-slate-800/40 md:bg-rose-900/40 p-6 md:p-10 rounded-xl shadow-2xl shadow-slate-800 cursor-pointer transition-all duration-500 ease-linear animate-web h-[320px]"
+            : "border border-slate-700 relative bg-slate-800/40 p-6 md:p-10 rounded-xl cursor-pointer transition-all duration-500 ease-linear shadow-2xl shadow-slate-900 animate-web overflow-hidden h-[320px]"
         }
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
-        initial={{opacity: 0, x: -100}}
-        animate={{opacity: 1, x: 0}}
-        transition={{duration: 0.6}}
+        initial={{opacity: 0, y: 100}}
+        animate={{opacity: 1, y: 0}}
+        transition={{duration: 1}}
     >
         <div className="flex justify-between items-center text-slate-300">
             <h1 className='text-2xl uppercase font-bold'>EXPERIENCE</h1>

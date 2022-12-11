@@ -10,8 +10,8 @@ const Mobile = ({project}) => {
   return (
     <motion.div 
         className={ hover 
-          ? 'border border-slate-100 bg-teal-800/40 relative rounded-md p-4 cursor-pointer h-80 overflow-hidden transition-all duration-300 ease-linear animate-mobile'
-          : 'border border-slate-700 bg-slate-800/40 relative rounded-md p-4 cursor-pointer h-80 overflow-hidden transition-all duration-300 ease-linear animate-mobile'
+          ? 'border border-slate-100 bg-teal-800/40 relative rounded-md p-4 cursor-pointer h-60 w-full md:h-80 overflow-hidden md:low-hidden transition-all duration-300 ease-linear animate-mobile'
+          : 'border border-slate-700 bg-slate-800/40 relative rounded-md p-4 cursor-pointer h-60 w-full md:h-80 overflow-hidden transition-all duration-300 ease-linear animate-mobile'
         }
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
@@ -28,8 +28,8 @@ const Mobile = ({project}) => {
        </div>
 
         <div className={ hover 
-          ? 'left-1/2 -translate-x-1/2 w-[210px] h-[450px] absolute -bottom-64 transition-all duration-300 ease-linear scale-105'
-          : 'left-1/2 -translate-x-1/2 w-[210px] h-[450px] absolute -bottom-64 transition-all duration-300 ease-linear'}
+          ? 'left-1/2 -translate-x-1/2 w-[180px] md:w-[210px] h-[400px] md:h-[450px] absolute -bottom-64 transition-all duration-300 ease-linear scale-105'
+          : 'left-1/2 -translate-x-1/2 w-[180px] md:w-[210px] h-[400px] md:h-[450px] absolute -bottom-64 transition-all duration-300 ease-linear'}
         >
             {   project.img.mobile &&
                 <Image 

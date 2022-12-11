@@ -14,7 +14,7 @@ export default function Home() {
     <Layout page='Frontend Developer'>
       <div className="mt-20 md:mt-36 h-[4rem] md:h-[8rem] overflow-hidden">
         <motion.h1 
-          className="text-6xl md:text-[11rem] tracking-wide font-bold text-slate-600  leading-[4rem] md:leading-[8rem] "
+          className="text-6xl md:text-[11rem] tracking-wide font-bold text-slate-500  leading-[4rem] md:leading-[8rem] "
           initial={{opacity: 0, y: -100}}
           animate={{opacity: 1, y: 0}}
           transition={{duration: 0.4}}

@@ -26,7 +26,7 @@ const Header = ({menu, setMenu}) => {
                             fill
                             placeholder="blur"
                             blurDataURL={me.blurDataURL}
-                            className="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out"
+                            className="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out "
                             sizes="(max-width: 768px) 100vw,
                                     (max-width: 1200px) 50vw,
                                     33vw"
@@ -56,6 +56,13 @@ const Header = ({menu, setMenu}) => {
                         animate={{opacity: 1}}
                         transition={{duration: 1.8}}
                     >Projects</motion.p>
+                </Link>
+                <Link href='/try'>
+                    <motion.p className="text-xl font-bold text-slate-100/70 hover:text-indigo-600 transition-all ease-linear duration-150"
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{duration: 1.8}}
+                    >Try</motion.p>
                 </Link>
 
                 <Link href='/contact'>

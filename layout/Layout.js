@@ -9,7 +9,7 @@ const Layout = ({children, page}) => {
   const [menu, setMenu] = useState(false)
 
   return (
-    <div className="relative" >
+    <div className="relative" lang="en">
         <Head>
             <title>Estanislao M. Lacabe - {page}</title>
             <meta name="description" content="Frontend Developer. Portfolio web" />
