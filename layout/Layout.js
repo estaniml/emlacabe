@@ -23,7 +23,7 @@ const Layout = ({children, page}) => {
         
         <ResponsiveMenu menu={menu} />
 
-        <div className="w-full md:w-4/5 mx-auto px-4 md:px-0">
+        <div className="relative w-full md:w-4/5 mx-auto px-4 md:px-0">
             {children}
         </div>
 

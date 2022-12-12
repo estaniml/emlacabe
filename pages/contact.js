@@ -3,8 +3,15 @@ import { motion } from "framer-motion";
 import { FaLinkedin, FaGithubSquare, FaWhatsappSquare } from 'react-icons/fa'
 import { RiMailSendLine, RiArrowDownCircleLine } from 'react-icons/ri'
 import ContactForm from '../components/ContactForm';
+import { useState } from 'react';
+import PopUp from '../components/PopUp';
 
 const Contact = () => {
+
+    const [statusMsg, setStatusMsg] = useState({
+        show: false,
+        text: ''
+    })
 
   return (
     <Layout page='Get in touch!'>
@@ -67,7 +74,9 @@ const Contact = () => {
                 </motion.div>
             </div>
 
-            <ContactForm />
+            <ContactForm 
+                setStatusMsg={setStatusMsg} 
+            />
 
             <div className='flex flex-col md:hidden mt-0 text-slate-300'>
                 
@@ -97,6 +106,11 @@ const Contact = () => {
                 
             </div>
         </div>
+
+        <PopUp 
+            statusMsg={statusMsg}
+            setStatusMsg={setStatusMsg}
+        />
     </Layout>
   )
 }

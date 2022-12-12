@@ -26,8 +26,8 @@ const IT = () => {
     >   
         <motion.div 
           className={ hover 
-            ? "border border-slate-100 row-li-3 mb-6 md:mb-10 bg-slate-900 md:bg-gradient-to-b from-purple-800/50 via-purple-900 to-purple-800/50 p-6 md:p-10 pb-0 rounded-xl shadow-2xl shadow-slate-900 cursor-pointer transition-all duration-500 ease-linear h-full"
-            : "border border-slate-700 row-li-3 mb-6 md:mb-10 bg-slate-900 p-6 md:p-10 pb-0 rounded-xl cursor-pointer transition-all duration-500 ease-linear h-full shadow-2xl shadow-slate-900"
+            ? "border border-slate-100 row-li-3 mb-6 md:mb-10 bg-slate-800/40 md:bg-gradient-to-b from-purple-900/50 via-purple-800/50 to-purple-900/50 p-6 md:p-10 pb-0 rounded-xl shadow-2xl shadow-slate-900 cursor-pointer transition-all duration-500 ease-linear h-full"
+            : "border border-slate-700 row-li-3 mb-6 md:mb-10 bg-slate-800/40 p-6 md:p-10 pb-0 rounded-xl cursor-pointer transition-all duration-500 ease-linear h-full shadow-2xl shadow-slate-900"
           }
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
@@ -41,7 +41,7 @@ const IT = () => {
             </div>
 
             <div 
-              className='relative border-2 border-slate-700 bg-slate-800/70 rounded-xl p-4 my-2 mt-4 h-[255px] overflow-hidden hover:shadow-xl md:hover:shadow-purple-900'
+              className='relative border-2 border-slate-700 bg-slate-800/50 rounded-xl p-4 my-2 mt-4 h-[255px] overflow-hidden hover:shadow-xl md:hover:shadow-purple-900'
               onMouseEnter={ () => setInfo({ frontend: true, backend: false})}
               onMouseLeave={ () => setInfo({ frontend: false, backend: false})}
             >
@@ -83,7 +83,7 @@ const IT = () => {
             </div>
 
             <div 
-              className='relative border-2 border-slate-700 bg-slate-800/70 rounded-xl p-4 my-2 mt-6 h-[250px] overflow-hidden hover:shadow-xl md:hover:shadow-purple-900'
+              className='relative border-2 border-slate-700 bg-slate-800/50 rounded-xl p-4 my-2 mt-6 h-[250px] overflow-hidden hover:shadow-xl md:hover:shadow-purple-900'
               onMouseEnter={ () => setInfo({ frontend: false, backend: true})}
               onMouseLeave={ () => setInfo({ frontend: false, backend: false})}
             >

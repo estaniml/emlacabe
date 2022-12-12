@@ -57,13 +57,6 @@ const Header = ({menu, setMenu}) => {
                         transition={{duration: 1.8}}
                     >Projects</motion.p>
                 </Link>
-                <Link href='/try'>
-                    <motion.p className="text-xl font-bold text-slate-100/70 hover:text-indigo-600 transition-all ease-linear duration-150"
-                        initial={{opacity: 0}}
-                        animate={{opacity: 1}}
-                        transition={{duration: 1.8}}
-                    >Try</motion.p>
-                </Link>
 
                 <Link href='/contact'>
                     <motion.button 
