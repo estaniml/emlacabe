@@ -11,7 +11,7 @@ const Layout = ({children, page}) => {
   return (
     <div className="relative" lang="en">
         <Head>
-            <title>Estanislao M. Lacabe | {page}</title>
+            <title>Estanislao M. Lacabe - {page}</title>
             <meta name="description" content="Frontend Developer. Portfolio web" />
             <meta name="author" content="Estanislao Martinez Lacabe"></meta>
             <link rel="icon" href="/mlogo.png" />

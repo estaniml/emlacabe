@@ -23,6 +23,7 @@ const Web = ({project}) => {
             <div className='mt-1 flex justify-between items-center'>
                 <h1 className='font-bold text-xl md:text-2xl'>{project?.title}</h1>
                 <div className='flex items-center gap-4'>
+
                     <a href={project?.gitUrl} target="_blank" rel="noreferrer">
                         <FaGithub className='text-xl hover:scale-125 hover:text-teal-300 transition-all duration-150 ease-linear' />
                     </a>
@@ -34,7 +35,8 @@ const Web = ({project}) => {
             </div>
        </div>
 
-       <div className={ hover ? 'left-1/2 -translate-x-1/2 w-[300px] md:w-[450px] h-[200px] md:h-[250px] absolute -bottom-10 transition-all duration-300 ease-linear scale-105'
+       <div 
+            className={ hover ? 'left-1/2 -translate-x-1/2 w-[300px] md:w-[450px] h-[200px] md:h-[250px] absolute -bottom-10 transition-all duration-300 ease-linear scale-105'
                         : 'left-1/2 -translate-x-1/2 w-[300px] md:w-[450px] h-[200px] md:h-[250px] absolute -bottom-16 transition-all duration-300 ease-linear'
         }>
             {   project.img.desktop &&
