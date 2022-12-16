@@ -9,7 +9,7 @@ const Header = ({menu, setMenu}) => {
 
 
   return (
-    <header className="fixed top-0 w-full bg-black z-50">
+    <header className="fixed top-0 w-full bg-black/60 z-50 backdrop-filter backdrop-blur-2xl">
         <div className="w-full md:w-4/5 px-4 md:px-0 mx-auto py-4 md:py-6 flex justify-between items-center">
             <Link href='/'>
                 <div className="flex items-center space-x-6">
