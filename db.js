@@ -60,7 +60,7 @@ export const projecstList = [
             js: [ 'javascript', 'react', 'next'],
             extra: [ 'vercel', 'git' ]
         },
-        url: 'https:/berducsuites.com.ar',
+        url: 'https://berducsuites.com.ar',
         gitUrl: null,
     },
     {
