@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import ResponsiveMenu from "../components/ResponsiveMenu"
@@ -7,6 +7,8 @@ import ResponsiveMenu from "../components/ResponsiveMenu"
 const Layout = ({children, page}) => {
   
   const [menu, setMenu] = useState(false)
+
+
 
   return (
     <div className="relative" lang="en">

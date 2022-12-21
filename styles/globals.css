@@ -114,3 +114,17 @@ a {
   bottom: 50px;
   right: 50px;
 }
+
+
+.cursor-follow {
+  position: absolute;
+  background: rgb(220, 211, 211);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  z-index: 222;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(-4px, -140px);
+}
