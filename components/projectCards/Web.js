@@ -9,8 +9,8 @@ const Web = ({project}) => {
 
   return (
     <motion.div 
-        className={ hover ? 'border border-slate-100 relative bg-purple-800/40 md:col-span-2 rounded-md p-4 cursor-pointer h-60 md:h-80 overflow-hidden transition-all duration-300 ease-linear  animate-web'
-                        : 'border border-slate-700 bg-slate-800/40 relative  md:col-span-2 rounded-md p-4 cursor-pointer h-60 md:h-80 overflow-hidden transition-all duration-300 ease-linear  animate-web'
+        className={ hover ? 'border border-slate-100 relative bg-purple-800/40 md:col-span-2 rounded-md p-4 h-60 md:h-80 overflow-hidden transition-all duration-300 ease-linear  animate-web'
+                        : 'border border-slate-700 bg-slate-800/40 relative  md:col-span-2 rounded-md p-4 h-60 md:h-80 overflow-hidden transition-all duration-300 ease-linear  animate-web'
         }
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
@@ -24,9 +24,9 @@ const Web = ({project}) => {
                 <h1 className='font-bold text-xl md:text-2xl'>{project?.title}</h1>
                 <div className='flex items-center gap-4'>
 
-                    <a href={project?.gitUrl} target="_blank" rel="noreferrer">
+                    { project.gitUrl && <a href={project?.gitUrl} target="_blank" rel="noreferrer">
                         <FaGithub className='text-xl hover:scale-125 hover:text-teal-300 transition-all duration-150 ease-linear' />
-                    </a>
+                    </a>}
                     
                     <a href={project?.url} target="_blank" rel="noreferrer">
                         <FaExternalLinkAlt className='text-xl hover:scale-125 hover:text-teal-300 transition-all duration-150 ease-linear' />

@@ -69,11 +69,11 @@ const Projects = () => {
       </div>
 
       <ul className="flex justify-center items-center gap-4 px-4 mb-6 text-sm md:text-md overflow-x-scroll md:overflow-x-hidden pl-12">
-        <li onClick={() => setTab({category: 'all', showAll: false})}  className={ tab.category === 'all' ? "text-slate-50 hover:text-blue-100 cursor-pointer bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 cursor-pointer px-2"}>ALL</li>
-        <li onClick={() => setTab({category: 'real', showAll: false})}  className={ tab.category === 'real' ? "text-slate-50 hover:text-blue-100 cursor-pointer bg-indigo-600 rounded px-2 whitespace-nowrap	" : "text-slate-100 hover:text-cyan-600 cursor-pointer px-2 whitespace-nowrap	"}>REAL WEBS</li>
-        <li onClick={() => setTab({category: 'project', showAll: false})}  className={ tab.category === 'project' ? "text-slate-50 hover:text-blue-100 cursor-pointer bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 cursor-pointer px-2"}>PROJECTS</li>
-        <li onClick={() => setTab({category: 'react', showAll: false})}  className={ tab.category === 'react' ? "text-slate-50 hover:text-blue-100 cursor-pointer bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 cursor-pointer px-2"}>REACT</li>
-        <li onClick={() => setTab({category: 'next', showAll: false})}  className={ tab.category === 'next' ? "text-slate-50 hover:text-blue-100 cursor-pointer bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 cursor-pointer px-2"}>NEXT</li>
+        <li onClick={() => setTab({category: 'all', showAll: false})}  className={ tab.category === 'all' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 px-2"}>ALL</li>
+        <li onClick={() => setTab({category: 'real', showAll: false})}  className={ tab.category === 'real' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2 whitespace-nowrap	" : "text-slate-100 hover:text-cyan-600 px-2 whitespace-nowrap	"}>REAL WEBS</li>
+        <li onClick={() => setTab({category: 'project', showAll: false})}  className={ tab.category === 'project' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 px-2"}>PROJECTS</li>
+        <li onClick={() => setTab({category: 'react', showAll: false})}  className={ tab.category === 'react' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 px-2"}>REACT</li>
+        <li onClick={() => setTab({category: 'next', showAll: false})}  className={ tab.category === 'next' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 px-2"}>NEXT</li>
       </ul>
 
       { projects?.map( project => (

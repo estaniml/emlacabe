@@ -41,22 +41,22 @@ const Contact = () => {
                     animate={{opacity: 1, }}
                     transition={{duration: 0.8}}
                 >
-                    <p className='w-full rounded-lg text-center md:text-lg transition-all duration-150 ease-in-out cursor-pointer'
+                    <p className='w-full rounded-lg text-center md:text-lg transition-all duration-150 ease-in-out'
                     >Contact me throw my social networks</p>
 
                     <div className='mt-2 flex justify-center items-center gap-4'>
                         <a target="_blank" rel="noreferrer" href='https://api.whatsapp.com/send/?phone=5493434653960' className='relative' aria-label="My Linkedin Profile">
-                        <FaLinkedin className='text-xl md:text-2xl cursor-pointer' />
+                        <FaLinkedin className='text-xl md:text-2xl' />
                         <div className='w-6 h-6 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-blue-800 blur-xl -z-1 hover:bg-blue-500 transition-all ease-in-out duration-300 '></div>
                     </a>
 
                     <a target="_blank" rel="noreferrer" href='https://api.whatsapp.com/send/?phone=5493434653960' className='relative' aria-label="My GitHub Profile">
-                        <FaGithubSquare className='text-xl md:text-2xl cursor-pointer transition-all ease-in-out duration-200 ' />
+                        <FaGithubSquare className='text-xl md:text-2xl transition-all ease-in-out duration-200 ' />
                         <div className='w-6 h-6 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-teal-800 blur-xl -z-1 hover:bg-teal-500 transition-all ease-in-out duration-300 '></div>
                     </a>
 
                     <a target="_blank" rel="noreferrer" href='https://api.whatsapp.com/send/?phone=5493434653960' className='relative' aria-label="My Whatsapp!">
-                        <FaWhatsappSquare className='text-xl md:text-2xl cursor-pointer transition-all ease-in-out duration-200 ' />
+                        <FaWhatsappSquare className='text-xl md:text-2xl transition-all ease-in-out duration-200 ' />
                         <div className='w-6 h-6 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-red-800 blur-xl -z-1 hover:bg-red-500 transition-all ease-in-out duration-300 '></div>
                     </a>
                     </div>
@@ -96,7 +96,7 @@ const Contact = () => {
                     animate={{opacity: 1, }}
                     transition={{duration: 0.8}}
                 >
-                    <p className='w-full rounded-lg text-center transition-all duration-150 ease-in-out cursor-pointer'
+                    <p className='w-full rounded-lg text-center transition-all duration-150 ease-in-out'
                     >Contact me throw my social networks</p>
 
                     <RiArrowDownCircleLine className='text-xl mx-auto mt-2' />

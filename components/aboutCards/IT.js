@@ -26,8 +26,8 @@ const IT = () => {
     >   
         <motion.div 
           className={ hover 
-            ? "border border-slate-100 row-li-3 mb-6 md:mb-10 bg-slate-800/40 p-6 md:p-10 pb-0 rounded-xl shadow-2xl shadow-slate-900 cursor-pointer transition-all duration-500 ease-linear h-full"
-            : "border border-slate-700 row-li-3 mb-6 md:mb-10 bg-slate-800/40 p-6 md:p-10 pb-0 rounded-xl cursor-pointer transition-all duration-500 ease-linear h-full shadow-2xl shadow-slate-900"
+            ? "border border-slate-100 row-li-3 mb-6 md:mb-10 bg-slate-800/40 p-6 md:p-10 pb-0 rounded-xl shadow-2xl shadow-slate-900 transition-all duration-500 ease-linear h-full"
+            : "border border-slate-700 row-li-3 mb-6 md:mb-10 bg-slate-800/40 p-6 md:p-10 pb-0 rounded-xl transition-all duration-500 ease-linear h-full shadow-2xl shadow-slate-900"
           }
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}

@@ -14,6 +14,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: none;
 }
 
 * {
@@ -127,4 +128,29 @@ a {
   user-select: none;
   pointer-events: none;
   transform: translate(-4px, -140px);
+}
+
+/* SPINNER */
+.spinner {
+  background-image: linear-gradient(rgb(139, 92, 246) 25%,rgb(59, 130, 246) 50%, #14b8a6 75%) ;
+  width: 50px;
+  height: 50px;
+  animation: spinning 1.7s linear infinite;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0px -5px 20px 0px rgb(139, 92, 246), 0px 5px 20px 0px #14b8a6;
+}
+
+.spinner1 {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  filter: blur(10px);
+}
+
+@keyframes spinning {
+  to {
+    transform: rotate(360deg);
+  }
 }

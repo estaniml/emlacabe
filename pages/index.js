@@ -38,7 +38,12 @@ export default function Home() {
 
       <div className="mt-10 flex flex-col items-center">
         <p className="text-2xl mb-4 font-bold text-slate-300">My Resume.</p>
-        <button className="flex items-center gap-2 border px-4 py-2 rounded-md font-bold hover:bg-white hover:text-black transition duration-200 ease-linear"><AiOutlineDownload />Download</button>
+        <a
+          download='Estanislao Martinez Lacabe CV'
+          href='estanislaoMartinezLacabe-cv.pdf'
+        >
+          <button className="flex items-center gap-2 border px-4 py-2 rounded-md font-bold hover:bg-white hover:text-black transition duration-200 ease-linear"><AiOutlineDownload />Download</button>
+        </a>
       </div>
 
     </Layout>

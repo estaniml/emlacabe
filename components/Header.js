@@ -26,7 +26,7 @@ const Header = ({menu, setMenu}) => {
                             fill
                             placeholder="blur"
                             blurDataURL={me.blurDataURL}
-                            className="cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out "
+                            className="hover:scale-110 transition-all duration-300 ease-in-out "
                             sizes="(max-width: 768px) 100vw,
                                     (max-width: 1200px) 50vw,
                                     33vw"
