@@ -59,16 +59,16 @@ const Projects = () => {
 
   return (
     <Layout page='Projects'>
-      <div className="mt-20 md:mt-40 md:mb-24 h-[6rem] md:h-[12rem] overflow-hidden" ref={top}>
+      <div className="mt-28 lg:mt-40 lg:mb-10 h-[6rem] lg:h-[12rem] overflow-hidden" ref={top}>
         <motion.h1 
-          className="text-5xl md:text-[11rem] tracking-wide font-bold text-slate-500  leading-[4rem] md:leading-[10rem]"
+          className="text-5xl lg:text-[8rem] xl:text-[10rem] tracking-wide font-bold text-slate-500  leading-[4rem] lg:leading-[8rem] xl:leading-[10rem]"
           initial={{opacity: 0, y: -100}}
           animate={{opacity: 1, y: 0}}
           transition={{duration: 0.4}}
         >My Projects.</motion.h1>
       </div>
 
-      <ul className="flex justify-center items-center gap-4 px-4 mb-6 text-sm md:text-md overflow-x-scroll md:overflow-x-hidden pl-12">
+      <ul className="flex justify-center items-center gap-4 px-4 mb-6 text-sm lg:text-lg overflow-x-scroll lg:overflow-x-hidden pl-12 pb-6">
         <li onClick={() => setTab({category: 'all', showAll: false})}  className={ tab.category === 'all' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 px-2"}>ALL</li>
         <li onClick={() => setTab({category: 'real', showAll: false})}  className={ tab.category === 'real' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2 whitespace-nowrap	" : "text-slate-100 hover:text-cyan-600 px-2 whitespace-nowrap	"}>REAL WEBS</li>
         <li onClick={() => setTab({category: 'project', showAll: false})}  className={ tab.category === 'project' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 px-2"}>PROJECTS</li>

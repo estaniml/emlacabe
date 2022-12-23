@@ -11,7 +11,7 @@ const Layout = ({children, page}) => {
 
 
   return (
-    <div className="relative" lang="en">
+    <div className="relative bg-black text-white" lang="en">
         <Head>
             <title>Estanislao M. Lacabe - {page}</title>
             <meta name="description" content="Frontend Developer. Portfolio web" />
