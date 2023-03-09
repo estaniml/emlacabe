@@ -4,6 +4,7 @@ import Project from "../components/Project"
 import { projecstList } from "../db.js"
 import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion";
+import PageTitle from "../components/PageTitle"
 
 const Projects = () => {
 
@@ -59,14 +60,7 @@ const Projects = () => {
 
   return (
     <Layout page='Projects'>
-      <div className="mt-28 lg:mt-40 lg:mb-10 h-[6rem] lg:h-[12rem] overflow-hidden" ref={top}>
-        <motion.h1 
-          className="text-5xl lg:text-[8rem] xl:text-[10rem] tracking-wide font-bold text-slate-500  leading-[4rem] lg:leading-[8rem] xl:leading-[10rem]"
-          initial={{opacity: 0, y: -100}}
-          animate={{opacity: 1, y: 0}}
-          transition={{duration: 0.4}}
-        >My Projects.</motion.h1>
-      </div>
+      <PageTitle top={top}>My Projects.</PageTitle>
 
       <ul className="flex justify-center items-center gap-4 px-4 mb-6 text-sm lg:text-lg overflow-x-scroll lg:overflow-x-hidden pl-12 pb-6">
         <li onClick={() => setTab({category: 'all', showAll: false})}  className={ tab.category === 'all' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 px-2"}>ALL</li>
@@ -83,7 +77,7 @@ const Projects = () => {
         { 
           more && 
             <motion.button 
-              className="flex rounded after:rounded items-center gap-2 justify-center mx-auto mt-12 w-40 h-10 font-bold relative tracking-wide bg-black after:w-[165px] after:h-[44px] after:absolute after:-top-[2px] after:-z-10 after:bg-white after:-left-[2px] after:bg-gradient-to-tr after:from-rose-500 after:via-orange-500 after:to-yellow-500 text-orange-100 px-4 py-2 hover:bg-gradient-to-tr hover:from-rose-500 hover:via-via-500 hover:to-yellow-500 hover:shadow-xl hover:shadow-orange-600/20 transition-all ease-linear duration-400"
+              className="flex rounded items-center gap-2 justify-center mx-auto mt-12 w-40 h-12 font-bold relative tracking-wide text-indigo-400 hover:shadow-xl hover:shadow-indigo-600/40 transition-all ease-linear duration-400"
               onClick={showMoreLess}
               initial={{opacity: 0, y: 50}}
               whileInView={{opacity: 1, y: 0}}
@@ -95,7 +89,9 @@ const Projects = () => {
               } 
               
             </motion.button>
+            
         }
+        
     </Layout>
   )
 }

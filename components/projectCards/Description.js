@@ -73,7 +73,7 @@ const Description = ({project}) => {
           ))}
         </ul>
 
-        <ul className='flex items-center gap-4 bg-slate-800/70 border border-slate-600 rounded-md p-2'>
+        <ul className='flex flex-col lg:flex-row items-start lg:items-center gap-4 bg-slate-800/70 border border-slate-600 rounded-md p-2'>
           { project?.tools?.extra.map( tool => (
             <li key={tool} className='flex items-center gap-2'>{setLogo(tool)} {tool}</li>
           ))}

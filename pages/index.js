@@ -6,6 +6,7 @@ import Profile from "../components/aboutCards/Profile";
 import Layout from "../layout/Layout";
 import { motion } from "framer-motion";
 import { AiOutlineDownload } from 'react-icons/ai'
+import PageTitle from "../components/PageTitle";
 
 export default function Home() {
 
@@ -13,14 +14,7 @@ export default function Home() {
 
   return (
     <Layout page='Frontend Developer'>
-      <div className="mt-20 xl:mt-36 h-[4rem] xl:h-[8rem] overflow-hidden">
-        <motion.h1 
-          className="text-6xl xl:text-[11rem] tracking-wide font-bold text-slate-500  leading-[4rem] xl:leading-[8rem] "
-          initial={{opacity: 0, y: -100}}
-          animate={{opacity: 1, y: 0}}
-          transition={{duration: 0.4}}
-        >About Me.</motion.h1>
-      </div>
+    <PageTitle>About Me.</PageTitle>
 
       <div className="mt-10 xl:mt-20 grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-2 gap-6 xl:gap-10">
         

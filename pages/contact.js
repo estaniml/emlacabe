@@ -5,6 +5,7 @@ import { RiMailSendLine, RiArrowDownCircleLine } from 'react-icons/ri'
 import ContactForm from '../components/ContactForm';
 import { useState } from 'react';
 import PopUp from '../components/PopUp';
+import PageTitle from '../components/PageTitle';
 
 const Contact = () => {
 
@@ -15,14 +16,7 @@ const Contact = () => {
 
   return (
     <Layout page='Get in touch!'>
-        <div className="mt-20 md:mt-36 md:mb-20  h-[4rem] md:h-[11rem] overflow-hidden">
-            <motion.h1 
-                className="text-5xl md:text-[11rem] tracking-wide font-bold text-slate-500  leading-[4rem] md:leading-[10rem] "
-                initial={{opacity: 0, y: -100}}
-                animate={{opacity: 1, y: 0}}
-                transition={{duration: 0.4}}
-            >Get in touch.</motion.h1>
-        </div>
+        <PageTitle>Get in touch.</PageTitle>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
 
@@ -32,7 +26,7 @@ const Contact = () => {
                     initial={{opacity: 0, }}
                     animate={{opacity: 1, }}
                     transition={{duration: 0.6}}
-                >Got a question or proposal, or just want to say hello? Go ahead →</motion.h2>
+                >Got a question or proposal. Go ahead →</motion.h2>
 
                 
                 <motion.div 

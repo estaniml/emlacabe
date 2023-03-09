@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FaUserTie } from 'react-icons/fa'
 import { motion } from "framer-motion";
+import Link from "next/link"
 
 const Experience = () => {
 
@@ -33,7 +34,7 @@ const Experience = () => {
             <p>2022 - Now (Freelance)</p>
             <p>Fronted Developer</p>
 
-            <p className={ hover ? 'h-12 text-slate-300 overflow-hidden transition-all duration-200 ease-linear' : 'h-0 overflow-hidden transition-all duration-200 ease-linea'}>I worked on projects for differents clients</p>
+            <p className={ hover ? 'h-12 text-slate-300 overflow-hidden transition-all duration-200 ease-linear' : 'h-0 overflow-hidden transition-all duration-200 ease-linea'}>I worked on projects for differents clients. <Link href='/projects' className="hover:underline">Go to /projects</Link></p>
         </div>
     </motion.div>
   )

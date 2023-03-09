@@ -4,8 +4,8 @@ import aerolab2Mobile from './public/projects/aerolab2-mobile.png'
 import berducDesktop from './public/projects/berduc-desktop.png'
 import berduc2Mobile from './public/projects/berduc-mobile.png'
 
-import meli from './public/projects/meli.png'
-import meliDarkMode from './public/projects/meli-darkmode.png'
+import tarragonaDesktop from './public/projects/tarragona-desktop.png'
+import tarragonaMobile from './public/projects/tarragona-mobile.png'
 
 import bsDesktop from './public/projects/bs-desktop.png'
 import bsMobile from './public/projects/bs-mobile.png'
@@ -22,8 +22,8 @@ import f1Mobile from './public/projects/f1-mobile.png'
 import vitssanDesktop from './public/projects/vitssan-desktop.png'
 import vitssanMobile from './public/projects/vitssan-mobile.png'
 
-import todoDesktop from './public/projects/todo-desktop.png'
-import todoMobile from './public/projects/todo-mobile.png'
+import fulbosDesktop from './public/projects/fulbos-desktop.png'
+import fulbosMobile from './public/projects/fulbos-mobile.png'
 
 import aerloab1Desktop from './public/projects/aerolab1-desktop.png'
 import aerloab1Mobile from './public/projects/aerolab1-mobile.png'
@@ -61,6 +61,23 @@ export const projecstList = [
             extra: [ 'vercel', 'git' ]
         },
         url: 'https://berducsuites.com.ar',
+        gitUrl: null,
+    },
+    {
+        id: 11,
+        title: 'Fulbos',
+        description: 'Web for a client / Not finished',
+        type: ['real', 'next'],
+        img: {
+            desktop: fulbosDesktop,
+            mobile: fulbosMobile
+        } ,
+        tools: {
+            html: [ 'html', 'tailwindcss', 'next'],
+            js: [ 'javascript', 'react'],
+            extra: [ 'vercel', 'git' ]
+        },
+        url: 'https://fulbo-estaniml.vercel.app/',
         gitUrl: null,
     },
     {
@@ -150,20 +167,20 @@ export const projecstList = [
     },
     {
         id: 8,
-        title: 'To do app',
-        type: 'Web for practise',
-        type: ['project', 'react'],
+        title: 'Tarragona Investments',
+        description: 'Web for a client / not finished',
+        type: ['real', 'react'],
         img: {
-            desktop: todoDesktop,
-            mobile: todoMobile
+            desktop: tarragonaDesktop,
+            mobile: tarragonaMobile
         } ,
         tools: {
-            html: [ 'html', 'cssmodules', 'vite'],
+            html: [ 'html', 'tailwindcss', 'vite'],
             js: [ 'javascript', 'react'],
-            extra: [ 'netlify', 'git' ]
+            extra: [ 'git' ]
         },
-        url: 'https://roadto.netlify.app/',
-        gitUrl: 'https://github.com/estaniml/todo-app',
+        url: 'https://tarragona.us',
+        gitUrl: null,
     },
     {
         id: 9,
@@ -181,22 +198,5 @@ export const projecstList = [
         },
         url: 'https://aerolabchallenge.netlify.app/',
         gitUrl: 'https://github.com/estaniml/Aerolab-Challenge',
-    },
-    {
-        id: 2,
-        title: 'Mercado Libre',
-        description: 'Challenge of the product page',
-        type: ['project', 'react'],
-        img: {
-            desktop: meli,
-            mobile: null
-        } ,
-        tools: {
-            html: [ 'html', 'tailwindcss', 'vite'],
-            js: [ 'javascript', 'react'],
-            extra: [ 'netlify', 'git' ]
-        },
-        url: 'https://melib-challenge.netlify.app/',
-        gitUrl: 'https://github.com/estaniml/mercadolibre-challenge',
     },
 ]
