@@ -16,6 +16,7 @@ const Contact = () => {
 
   return (
     <Layout page='Get in touch!'>
+        
         <PageTitle>Get in touch.</PageTitle>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
