@@ -34,7 +34,7 @@ const ContactForm = ({setStatusMsg}) => {
 
   return (
     <motion.form 
-        className='bg-slate-900/50 p-6 rounded-xl relative animate-form'
+        className='bg-slate-900/50 p-6 rounded-xl relative'
         initial={{y: 100}}
         animate={{y: 0}}
         transition={{duration: 1}}

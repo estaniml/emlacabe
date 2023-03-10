@@ -44,8 +44,8 @@ const Description = ({project}) => {
 
   return (
     <motion.div 
-        className={ hover ? 'border border-slate-100 bg-indigo-800/40 relative rounded-md p-4 h-80 transition-all duration-300 ease-linear animate-description'
-                        : 'border border-slate-700 bg-slate-900/40 relative rounded-md p-4 h-80 transition-all duration-300 ease-linear animate-description'
+        className={ hover ? 'border border-slate-100 bg-indigo-800/40 relative rounded-md p-4 h-80 transition-all duration-300 ease-linear'
+                        : 'border border-slate-700 bg-slate-900/40 relative rounded-md p-4 h-80 transition-all duration-300 ease-linear'
         }
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}

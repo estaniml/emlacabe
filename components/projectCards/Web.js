@@ -9,8 +9,8 @@ const Web = ({project}) => {
 
   return (
     <motion.div 
-        className={ hover ? 'border border-slate-100 relative bg-purple-800/40 md:col-span-2 rounded-md p-4 h-60 md:h-80 overflow-hidden transition-all duration-300 ease-linear  animate-web'
-                        : 'border border-slate-700 bg-slate-800/40 relative  md:col-span-2 rounded-md p-4 h-60 md:h-80 overflow-hidden transition-all duration-300 ease-linear  animate-web'
+        className={ hover ? 'border border-slate-100 relative bg-purple-800/40 md:col-span-2 rounded-md p-4 h-60 md:h-80 overflow-hidden transition-all duration-300 ease-linear'
+                        : 'border border-slate-700 bg-slate-800/40 relative  md:col-span-2 rounded-md p-4 h-60 md:h-80 overflow-hidden transition-all duration-300 ease-linear'
         }
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}

@@ -9,8 +9,8 @@ const Languages = () => {
   return (
     <motion.div 
         className={ hover 
-                ? "border border-slate-100 relative bg-slate-800/40 p-6 md:p-10 rounded-xl shadow-2xl shadow-slate-800 transition-all duration-500 ease-linear animate-description"
-                : "border border-slate-700 relative bg-slate-800/40 p-6 md:p-10 rounded-xl transition-all duration-500 ease-linear shadow-2xl shadow-slate-900 animate-description overflow-hidden"
+                ? "border border-slate-100 relative bg-slate-800/40 p-6 md:p-10 rounded-xl shadow-2xl shadow-slate-800 transition-all duration-500 ease-linear"
+                : "border border-slate-700 relative bg-slate-800/40 p-6 md:p-10 rounded-xl transition-all duration-500 ease-linear shadow-2xl shadow-slate-900 overflow-hidden"
             }
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}

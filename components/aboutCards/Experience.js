@@ -10,8 +10,8 @@ const Experience = () => {
   return (
     <motion.div 
         className={ hover 
-            ? "border border-slate-100 relative bg-slate-800/40 p-6 md:p-10 rounded-xl shadow-2xl shadow-slate-800 transition-all duration-500 ease-linear animate-web h-[340px]"
-            : "border border-slate-700 relative bg-slate-800/40 p-6 md:p-10 rounded-xl transition-all duration-500 ease-linear shadow-2xl shadow-slate-900 animate-web overflow-hidden h-[340px]"
+            ? "border border-slate-100 relative bg-slate-800/40 p-6 md:p-10 rounded-xl shadow-2xl shadow-slate-800 transition-all duration-500 ease-linear h-[340px]"
+            : "border border-slate-700 relative bg-slate-800/40 p-6 md:p-10 rounded-xl transition-all duration-500 ease-linear shadow-2xl shadow-slate-900 overflow-hidden h-[340px]"
         }
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
