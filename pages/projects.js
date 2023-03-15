@@ -63,11 +63,26 @@ const Projects = () => {
       <PageTitle top={top}>My Projects.</PageTitle>
 
       <ul className="flex justify-center items-center gap-4 px-4 mb-6 text-sm lg:text-lg overflow-x-scroll lg:overflow-x-hidden pl-12 pb-6">
-        <li onClick={() => setTab({category: 'all', showAll: false})}  className={ tab.category === 'all' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 px-2"}>ALL</li>
-        <li onClick={() => setTab({category: 'real', showAll: false})}  className={ tab.category === 'real' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2 whitespace-nowrap	" : "text-slate-100 hover:text-cyan-600 px-2 whitespace-nowrap	"}>REAL WEBS</li>
-        <li onClick={() => setTab({category: 'project', showAll: false})}  className={ tab.category === 'project' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 px-2"}>PROJECTS</li>
-        <li onClick={() => setTab({category: 'react', showAll: false})}  className={ tab.category === 'react' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 px-2"}>REACT</li>
-        <li onClick={() => setTab({category: 'next', showAll: false})}  className={ tab.category === 'next' ? "text-slate-50 hover:text-blue-100 bg-indigo-600 rounded px-2" : "text-slate-100 hover:text-cyan-600 px-2"}>NEXT</li>
+        <li 
+          onClick={() => setTab({category: 'all', showAll: false})}  
+          className={ tab.category === 'all' ? "text-slate-50 hover:text-teal-100 bg-indigo-600 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
+        >ALL</li>
+        <li 
+          onClick={() => setTab({category: 'real', showAll: false})}  
+          className={ tab.category === 'real' ? "text-slate-50 hover:text-teal-100 bg-indigo-600 rounded px-2 whitespace-nowrap	 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 whitespace-nowrap cursor-pointer"}
+        >REAL WEBS</li>
+        <li 
+          onClick={() => setTab({category: 'project', showAll: false})}  
+          className={ tab.category === 'project' ? "text-slate-50 hover:text-teal-100 bg-indigo-600 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
+        >PROJECTS</li>
+        <li 
+          onClick={() => setTab({category: 'react', showAll: false})}  
+          className={ tab.category === 'react' ? "text-slate-50 hover:text-teal-100 bg-indigo-600 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
+        >REACT</li>
+        <li 
+          onClick={() => setTab({category: 'next', showAll: false})}  
+          className={ tab.category === 'next' ? "text-slate-50 hover:text-teal-100 bg-indigo-600 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
+        >NEXT</li>
       </ul>
 
       { projects?.map( project => (

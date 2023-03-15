@@ -28,6 +28,9 @@ import fulbosMobile from './public/projects/fulbos-mobile.png'
 import aerloab1Desktop from './public/projects/aerolab1-desktop.png'
 import aerloab1Mobile from './public/projects/aerolab1-mobile.png'
 
+import terrazasDesktop from './public/projects/terrazas-desktop.png'
+import terrazasMobile from './public/projects/terrazas-mobile.png'
+
 export const projecstList = [
     {
         id: 1,
@@ -78,6 +81,23 @@ export const projecstList = [
             extra: [ 'vercel', 'git' ]
         },
         url: 'https://fulbo-estaniml.vercel.app/',
+        gitUrl: null,
+    },
+    {
+        id: 12,
+        title: 'Terrazas Urbanizacion',
+        description: 'Web for a client / Not finished',
+        type: ['real', 'next'],
+        img: {
+            desktop: terrazasDesktop,
+            mobile: terrazasMobile
+        } ,
+        tools: {
+            html: [ 'html', 'tailwindcss', 'next'],
+            js: [ 'javascript', 'react'],
+            extra: [ 'vercel', 'git' ]
+        },
+        url: 'https://terrazas-estaniml.vercel.app/',
         gitUrl: null,
     },
     {
