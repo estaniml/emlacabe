@@ -76,11 +76,11 @@ export const projecstList = [
             mobile: fulbosMobile
         } ,
         tools: {
-            html: [ 'html', 'tailwindcss', 'next'],
-            js: [ 'javascript', 'react'],
+            html: [ 'html', 'tailwindcss'],
+            js: [ 'javascript', 'react', 'next', 'firebase'],
             extra: [ 'vercel', 'git' ]
         },
-        url: 'https://fulbo-estaniml.vercel.app/',
+        url: 'https://fulbos.com/',
         gitUrl: null,
     },
     {
