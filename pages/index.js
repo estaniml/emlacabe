@@ -34,7 +34,7 @@ export default function Home() {
         <p className="text-2xl mb-4 font-bold text-slate-300">My Resume.</p>
         <a
           download='Estanislao Martinez Lacabe CV'
-          href='estanislaoMartinezLacabe-cv.pdf'
+          href='estanislaoMartinezLacabe-FrontendCV.pdf'
         >
           <button className="flex items-center gap-2 border px-4 py-2 rounded-xl font-bold hover:bg-white hover:text-black transition duration-200 ease-linear"><AiOutlineDownload />Download</button>
         </a>

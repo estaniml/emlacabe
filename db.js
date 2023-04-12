@@ -1,5 +1,5 @@
-import aerolab2Desktop from './public/projects/aerolab2-desktop.png'
-import aerolab2Mobile from './public/projects/aerolab2-mobile.png'
+import airbnbDesktop from './public/projects/airbnb-desktop.png'
+import airbnbMobile from './public/projects/airbnb-mobile.png'
 
 import berducDesktop from './public/projects/berduc-desktop.png'
 import berduc2Mobile from './public/projects/berduc-mobile.png'
@@ -16,8 +16,8 @@ import lnMobile from './public/projects/ln-mobile.png'
 import gameDesktop from './public/projects/game-desktop.png'
 import gameMobile from './public/projects/game-mobile.png'
 
-import f1Desktop from './public/projects/f1-desktop.png'
-import f1Mobile from './public/projects/f1-mobile.png'
+import alkemyDesktop from './public/projects/alkemy-desktop.png'
+import alkemyMobile from './public/projects/alkemy-mobile.png'
 
 import vitssanDesktop from './public/projects/vitssan-desktop.png'
 import vitssanMobile from './public/projects/vitssan-mobile.png'
@@ -32,23 +32,6 @@ import terrazasDesktop from './public/projects/terrazas-desktop.png'
 import terrazasMobile from './public/projects/terrazas-mobile.png'
 
 export const projecstList = [
-    {
-        id: 1,
-        title: 'Aerolab 2',
-        description: 'Company Challenge',
-        type: ['project', 'react'],
-        img: {
-            desktop: aerolab2Desktop,
-            mobile: aerolab2Mobile
-        } ,
-        tools: {
-            html: [ 'html', 'styledcomponents', 'vite'],
-            js: [ 'javascript', 'react' ],
-            extra: [ 'vercel', 'git' ]
-        },
-        url: 'https://aerolab-2-estaniml.vercel.app/',
-        gitUrl: 'https://github.com/estaniml/aerolab-2',
-    },
     {
         id: 10,
         title: 'Berduc Suites.',
@@ -80,7 +63,7 @@ export const projecstList = [
             js: [ 'javascript', 'react', 'next', 'firebase'],
             extra: [ 'vercel', 'git' ]
         },
-        url: 'https://fulbos.com/',
+        url: 'https://fulbo-estaniml.vercel.app',
         gitUrl: null,
     },
     {
@@ -114,7 +97,7 @@ export const projecstList = [
             js: [ 'javascript', 'react'],
             extra: [ 'netlify', 'git' ]
         },
-        url: 'https://basementsupply-challenge.netlify.app/',
+        url: 'https://bs-challenge.netlify.app/',
         gitUrl: 'https://github.com/estaniml/BasementSupply-Challenge',
     },
     {
@@ -131,8 +114,8 @@ export const projecstList = [
             js: [ 'typescript', 'react', 'next'],
             extra: [ 'netlify', 'git' ]
         },
-        url: 'https://basementsupply-challenge.netlify.app/',
-        gitUrl: 'https://github.com/estaniml/BasementSupply-Challenge',
+        url: 'https://ln-challenge.netlify.app/',
+        gitUrl: 'https://github.com/estaniml/lanacion-challenge',
     },
     {
         id: 5,
@@ -148,25 +131,25 @@ export const projecstList = [
             js: [ 'javascript', 'react'],
             extra: [ 'netlify', 'git' ]
         },
-        url: 'https://qame-quiz.netlify.app/',
+        url: 'https://mini-gam.netlify.app/',
         gitUrl: 'https://github.com/estaniml/quiz-game',
     },
     {
         id: 6,
-        title: 'Formula 1 API',
+        title: 'Airbnb Clone',
         description: 'Practise project',
         type: ['project', 'react'],
         img: {
-            desktop: f1Desktop,
-            mobile: f1Mobile
+            desktop: airbnbDesktop,
+            mobile: airbnbMobile
         } ,
         tools: {
-            html: [ 'html', 'tailwindcss', 'vite', 'router-dom'],
+            html: [ 'html', 'tailwindcss', 'next'],
             js: [ 'javascript', 'react'],
             extra: [ 'netlify', 'git' ]
         },
-        url: 'https://oneformula.netlify.app/',
-        gitUrl: 'https://github.com/estaniml/oneformula',
+        url: 'https://airclonenb.netlify.app/',
+        gitUrl: 'https://github.com/estaniml/airbnb-clone',
     },
     {
         id: 7,
@@ -204,19 +187,19 @@ export const projecstList = [
     },
     {
         id: 9,
-        title: 'Aerolab 1',
+        title: 'Alkemy',
         type: 'Company Challenge',
         type: ['project', 'react'],
         img: {
-            desktop: aerloab1Desktop,
-            mobile: aerloab1Mobile
+            desktop: alkemyDesktop,
+            mobile: alkemyMobile
         } ,
         tools: {
-            html: [ 'html', 'styledcomponents', 'vite', 'router-dom'],
+            html: [ 'html', 'tailwindcss', 'create-react-app', 'router-dom'],
             js: [ 'javascript', 'react'],
             extra: [ 'netlify', 'git' ]
         },
-        url: 'https://aerolabchallenge.netlify.app/',
+        url: 'https://alkemy-movikes.netlify.app/',
         gitUrl: 'https://github.com/estaniml/Aerolab-Challenge',
     },
 ]

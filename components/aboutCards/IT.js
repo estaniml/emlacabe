@@ -57,7 +57,7 @@ const IT = () => {
               
               <div
                 className='flex items-center' >
-                <p className='uppercase font-bold'>Backend</p>
+                <p className='uppercase flex gap-1 items-center'><strong>Backend</strong> <small>(some knowledge)</small></p>
               </div>
               
               <ul className={'my-4 text-sm transition-all duration-500 ease-in-out overflow-hidden grid grid-cols-2 gap-4 uppercase'}>
