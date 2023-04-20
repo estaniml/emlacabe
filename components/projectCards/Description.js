@@ -48,23 +48,24 @@ const Description = ({project}) => {
 
   return (
     <motion.div 
-        className={ hover ? 'border border-slate-100 bg-indigo-800/40 relative rounded-md p-4 h-80 transition-all duration-300 ease-linear'
-                        : 'border border-slate-700 bg-slate-900/40 relative rounded-md p-4 h-80 transition-all duration-300 ease-linear'
-        }
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-        initial={{opacity: 0, y: 90}}
-        whileInView={{opacity: 1, y: 0}}
-        transition={{duration: 0.8}}
+      className={ hover 
+        ? 'border border-slate-100 bg-indigo-800/40 relative rounded-md p-4 min-h-[320px] transition-all duration-300 ease-linear'
+        : 'border border-slate-700 bg-slate-900/40 relative rounded-md p-4 min-h-[320px] transition-all duration-300 ease-linear'
+      }
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      initial={{opacity: 0, y: 90}}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{duration: 0.8}}
     >
-       <div>
-            <span className='text-slate-400 uppercase text-xs'>TOOLS STACK</span>
-            <div className='mt-1 flex justify-between items-center'>
-                <h1 className='font-bold text-xl text-slate-300'>Javascript</h1>
-            </div>
-       </div>
+      <div>
+        <span className='text-slate-400 uppercase text-xs'>TOOLS STACK</span>
+        <div className='mt-1 flex justify-between items-center'>
+          <h1 className='font-bold text-xl text-slate-300'>Javascript</h1>
+        </div>
+      </div>
 
-       <div className='flex flex-col space-y-2 my-2 text-xs uppercase'>
+      <div className='flex flex-col space-y-2 my-2 text-xs uppercase'>
         <ul className='flex flex-col gap-2 bg-slate-800/70 border border-slate-600 rounded-md p-2 '>
           { project?.tools?.html.map( tool => (
             <li key={tool} className='flex items-center gap-2'>{setLogo(tool)} {tool}</li>
@@ -82,7 +83,7 @@ const Description = ({project}) => {
             <li key={tool} className='flex items-center gap-2'>{setLogo(tool)} {tool}</li>
           ))}
         </ul>
-       </div>
+      </div>
     </motion.div>
   )
 }

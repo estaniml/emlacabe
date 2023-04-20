@@ -25,8 +25,8 @@ import vitssanMobile from './public/projects/vitssan-mobile.png'
 import fulbosDesktop from './public/projects/fulbos-desktop.png'
 import fulbosMobile from './public/projects/fulbos-mobile.png'
 
-import aerloab1Desktop from './public/projects/aerolab1-desktop.png'
-import aerloab1Mobile from './public/projects/aerolab1-mobile.png'
+import gmlDesktop from './public/projects/gml-desktop.png'
+import gmlMobile from './public/projects/gml-mobile.png'
 
 import terrazasDesktop from './public/projects/terrazas-desktop.png'
 import terrazasMobile from './public/projects/terrazas-mobile.png'
@@ -76,11 +76,28 @@ export const projecstList = [
             mobile: terrazasMobile
         } ,
         tools: {
-            html: [ 'html', 'tailwindcss', 'next'],
-            js: [ 'javascript', 'react'],
+            html: [ 'html', 'tailwindcss'],
+            js: [ 'javascript', 'react', 'next'],
             extra: [ 'vercel', 'git' ]
         },
         url: 'https://terrazas-estaniml.vercel.app/',
+        gitUrl: null,
+    },
+    {
+        id: 13,
+        title: 'Dr. Martinez Lacabe',
+        description: 'Web for a client',
+        type: ['real', 'next'],
+        img: {
+            desktop: gmlDesktop,
+            mobile: gmlMobile
+        } ,
+        tools: {
+            html: [ 'html', 'tailwindcss'],
+            js: [ 'javascript', 'react', 'next'],
+            extra: [ 'vercel', 'git' ]
+        },
+        url: 'https://gmlacabe.vercel.app/',
         gitUrl: null,
     },
     {

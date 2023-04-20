@@ -17,14 +17,12 @@ const Projects = () => {
 
   const top = useRef(null)
 
- 
-
   useEffect(() => {
 
     if(tab.category === 'all'){
 
-      if( projecstList.length > 3 && tab.showAll === false ){
-        setProjects(projecstList.slice(0,3))
+      if( projecstList.length > 4 && tab.showAll === false ){
+        setProjects(projecstList.slice(0,4))
         setMore(true)
         return
       }
@@ -35,12 +33,12 @@ const Projects = () => {
 
     const filteredListed = projecstList.filter( project => project.type.includes(tab.category))
 
-    if(filteredListed.length < 3) {
+    if(filteredListed.length < 4) {
       setMore(false)
       top?.current?.scrollIntoView()
     }
-    if( filteredListed.length > 3 && tab.showAll === false){
-      setProjects(filteredListed.slice(0,3))
+    if( filteredListed.length > 4 && tab.showAll === false){
+      setProjects(filteredListed.slice(0,4))
       setMore(true)
       return
     }
@@ -56,13 +54,14 @@ const Projects = () => {
         top?.current?.scrollIntoView()
       }, 300);
     }
+
   }
 
   return (
     <Layout page='Projects'>
       <PageTitle top={top}>My Projects.</PageTitle>
 
-      <ul className="flex justify-center items-center gap-4 px-4 mb-6 text-sm lg:text-lg overflow-x-scroll lg:overflow-x-hidden pl-12 pb-6">
+      <ul className="flex justify-center items-center gap-4 px-4 mb-6 text-sm lg:text-[16px] overflow-x-scroll lg:overflow-x-hidden pl-12 pb-6">
         <li 
           onClick={() => setTab({category: 'all', showAll: false})}  
           className={ tab.category === 'all' ? "text-slate-50 hover:text-teal-100 bg-indigo-600 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
@@ -89,23 +88,21 @@ const Projects = () => {
         <Project key={project.id} project={project} />
       ))}    
 
-        { 
-          more && 
-            <motion.button 
-              className="flex rounded items-center gap-2 justify-center mx-auto mt-12 w-40 h-12 font-bold relative tracking-wide text-indigo-400 hover:shadow-xl hover:shadow-indigo-600/40 transition-all ease-linear duration-400"
-              onClick={showMoreLess}
-              initial={{opacity: 0, y: 50}}
-              whileInView={{opacity: 1, y: 0}}
-              transition={{duration: 0.4}}
-            >
-              { tab.showAll 
-                  ? <p className="flex items-center gap-2">Show less <AiFillMinusSquare /> </p>
-                  : <p className="flex items-center gap-2">Show more <AiFillPlusSquare /> </p>
-              } 
-              
-            </motion.button>
-            
-        }
+      { more && 
+        <motion.button 
+          className="flex rounded-full items-center gap-2 justify-center mx-auto mt-12 w-40 h-12 font-bold relative tracking-wide text-indigo-400 hover:shadow-lg hover:shadow-indigo-600/30 transition-all ease-linear duration-400"
+          onClick={showMoreLess}
+          initial={{opacity: 0, y: 50}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{duration: 0.4}}
+        >
+          { tab.showAll 
+              ? <p className="flex items-center gap-2">Show less <AiFillMinusSquare /> </p>
+              : <p className="flex items-center gap-2">Show more <AiFillPlusSquare /> </p>
+          } 
+          
+        </motion.button>  
+      }
         
     </Layout>
   )
