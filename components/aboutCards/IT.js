@@ -47,6 +47,7 @@ const IT = () => {
             <li>Typescript</li>
             <li>Bootstrap</li>
             <li className='flex items-center gap-2'>React <FaStar /></li>
+            <li className='flex items-center gap-2'>Vue </li>
             <li>Material UI</li>
           </ul>
         </div>
@@ -66,6 +67,7 @@ const IT = () => {
             <li>Mongodb</li>
             <li>Strapi</li>
             <li>Firebase</li>
+            <li>AWS Amplify</li>
           </ul>
           
           <div

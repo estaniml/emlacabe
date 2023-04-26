@@ -76,12 +76,16 @@ const Projects = () => {
         >PROJECTS</li>
         <li 
           onClick={() => setTab({category: 'react', showAll: false})}  
-          className={ tab.category === 'react' ? "text-slate-50 hover:text-teal-100 bg-indigo-600 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
+          className={ tab.category === 'react' ? "text-slate-50 hover:text-teal-100 bg-sky-500 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
         >REACT</li>
         <li 
           onClick={() => setTab({category: 'next', showAll: false})}  
-          className={ tab.category === 'next' ? "text-slate-50 hover:text-teal-100 bg-indigo-600 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
+          className={ tab.category === 'next' ? "text-slate-50 hover:text-teal-100 bg-gray-900 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
         >NEXT</li>
+        <li 
+          onClick={() => setTab({category: 'vue', showAll: false})}  
+          className={ tab.category === 'vue' ? "text-slate-50 hover:text-teal-100 bg-emerald-600 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
+        >VUE</li>
       </ul>
 
       { projects?.map( project => (
