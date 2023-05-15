@@ -31,6 +31,9 @@ import gmlMobile from './public/projects/gml-mobile.png'
 import terrazasDesktop from './public/projects/terrazas-desktop.png'
 import terrazasMobile from './public/projects/terrazas-mobile.png'
 
+import fmwDesktop from './public/projects/fmw-desktop.png'
+import fmwMobile from './public/projects/fmw-mobile.png'
+
 export const projecstList = [
     {
         id: 10,
@@ -85,6 +88,23 @@ export const projecstList = [
     },
     {
         id: 13,
+        title: 'Weather API',
+        description: 'Project',
+        type: ['project', 'vue'],
+        img: {
+            desktop: fmwDesktop,
+            mobile: fmwMobile
+        } ,
+        tools: {
+            html: [ 'html', 'tailwindcss'],
+            js: [ 'javascript', 'vue', 'vite'],
+            extra: [ 'netlify', 'git' ]
+        },
+        url: 'https://floy-myweather.netlify.app/',
+        gitUrl: null,
+    },
+    {
+        id: 14,
         title: 'Dr. Martinez Lacabe',
         description: 'Web for a client',
         type: ['real', 'next'],

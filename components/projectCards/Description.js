@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaHtml5, FaReact, FaGitAlt, FaCss3Alt  } from 'react-icons/fa'
+import { FaHtml5, FaReact, FaGitAlt, FaCss3Alt, FaVuejs  } from 'react-icons/fa'
 import { SiTailwindcss, SiJavascript, SiNextdotjs, SiVercel, SiVite, SiReactrouter, SiNetlify, SiStyledcomponents, SiTypescript, SiFirebase, SiCreatereactapp } from 'react-icons/si'
 import { motion } from "framer-motion";
 
@@ -37,10 +37,12 @@ const Description = ({project}) => {
         return <SiNetlify className='text-lg' />
       case 'typescript':
         return <SiTypescript className='text-lg' />
-        case 'firebase':
-          return <SiFirebase className='text-lg' />
-        case 'create-react-app':
-          return <FaReact className='text-lg' />
+      case 'firebase':
+        return <SiFirebase className='text-lg' />
+      case 'create-react-app':
+        return <FaReact className='text-lg' />
+      case 'vue':
+        return <FaVuejs className='text-lg' />
       default:
         break;
     }
