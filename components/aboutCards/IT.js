@@ -53,7 +53,7 @@ const IT = () => {
         </div>
 
         <div 
-          className='relative border-2 border-slate-700 bg-slate-800/50 rounded-xl p-4 my-2 mt-6 h-[250px] overflow-hidden hover:shadow-xl md:hover:shadow-slate-900'
+          className='relative border-2 border-slate-700 bg-slate-800/50 rounded-xl p-4 my-2 mt-6 h-fit overflow-hidden hover:shadow-xl md:hover:shadow-slate-900'
         >
           
           <div
@@ -65,9 +65,10 @@ const IT = () => {
             <li>Node</li>
             <li>Express</li>
             <li>Mongodb</li>
-            <li>Strapi</li>
             <li>Firebase</li>
             <li>AWS Amplify</li>
+            <li>Strapi</li>
+            <li>Sanity</li>
           </ul>
           
           <div

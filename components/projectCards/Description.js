@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaHtml5, FaReact, FaGitAlt, FaCss3Alt, FaVuejs  } from 'react-icons/fa'
+import { FaHtml5, FaReact, FaGitAlt, FaCss3Alt, FaVuejs, FaSpeakap  } from 'react-icons/fa'
 import { SiTailwindcss, SiJavascript, SiNextdotjs, SiVercel, SiVite, SiReactrouter, SiNetlify, SiStyledcomponents, SiTypescript, SiFirebase, SiCreatereactapp } from 'react-icons/si'
 import { motion } from "framer-motion";
 
@@ -43,6 +43,8 @@ const Description = ({project}) => {
         return <FaReact className='text-lg' />
       case 'vue':
         return <FaVuejs className='text-lg' />
+      case 'sanity':
+        return <FaSpeakap className='text-lg' />
       default:
         break;
     }

@@ -80,7 +80,7 @@ export const projecstList = [
         } ,
         tools: {
             html: [ 'html', 'tailwindcss'],
-            js: [ 'javascript', 'react', 'next'],
+            js: [ 'javascript', 'react', 'next', 'sanity'],
             extra: [ 'vercel', 'git' ]
         },
         url: 'https://terrazas-estaniml.vercel.app/',
