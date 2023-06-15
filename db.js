@@ -55,8 +55,8 @@ export const projecstList = [
     {
         id: 11,
         title: 'Fulbos',
-        description: 'Web for a client / Not finished',
-        type: ['real', 'next'],
+        description: 'Fullstack project',
+        type: ['project', 'next'],
         img: {
             desktop: fulbosDesktop,
             mobile: fulbosMobile
@@ -72,7 +72,7 @@ export const projecstList = [
     {
         id: 12,
         title: 'Terrazas Urbanizacion',
-        description: 'Web for a client / Not finished',
+        description: 'Web for a client ',
         type: ['real', 'next'],
         img: {
             desktop: terrazasDesktop,
@@ -83,7 +83,7 @@ export const projecstList = [
             js: [ 'javascript', 'react', 'next', 'sanity'],
             extra: [ 'vercel', 'git' ]
         },
-        url: 'https://terrazas-estaniml.vercel.app/',
+        url: 'https://urbanizacionterrazas.com.ar/',
         gitUrl: null,
     },
     {
