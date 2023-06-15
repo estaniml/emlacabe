@@ -17,6 +17,7 @@ const Web = ({project}) => {
         initial={{opacity: 0, y: 50}}
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 0.4}}
+        viewport={{ once: true }}
     >
        <div>
             <span className='text-slate-400 uppercase text-xs md:text-sm'>{project?.description}</span>

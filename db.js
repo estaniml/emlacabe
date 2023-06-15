@@ -34,6 +34,8 @@ import terrazasMobile from './public/projects/terrazas-mobile.png'
 import fmwDesktop from './public/projects/fmw-desktop.png'
 import fmwMobile from './public/projects/fmw-mobile.png'
 
+import vueestateDesktop from './public/projects/vueestate-desktop.png'
+
 export const projecstList = [
     {
         id: 10,
@@ -225,7 +227,7 @@ export const projecstList = [
     {
         id: 9,
         title: 'Alkemy',
-        type: 'Company Challenge',
+        description: 'Company Challenge',
         type: ['project', 'react'],
         img: {
             desktop: alkemyDesktop,
@@ -238,5 +240,22 @@ export const projecstList = [
         },
         url: 'https://alkemy-movikes.netlify.app/',
         gitUrl: 'https://github.com/estaniml/Aerolab-Challenge',
+    },
+    {
+        id: 15,
+        title: 'Vue Real Estate',
+        description: 'Project',
+        type: ['project', 'vue'],
+        img: {
+            desktop: vueestateDesktop,
+            mobile: null
+        } ,
+        tools: {
+            html: [ 'html', 'sass'],
+            js: [ 'javascript', 'vue', 'vue-router' ],
+            extra: [ 'netlify', 'git' ]
+        },
+        url: 'https://vue-estate.netlify.app/',
+        gitUrl: 'https://github.com/estaniml/realestate-vue',
     },
 ]

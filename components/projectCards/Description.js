@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaHtml5, FaReact, FaGitAlt, FaCss3Alt, FaVuejs, FaSpeakap  } from 'react-icons/fa'
+import { FaHtml5, FaReact, FaGitAlt, FaCss3Alt, FaVuejs, FaSpeakap, FaSass  } from 'react-icons/fa'
 import { SiTailwindcss, SiJavascript, SiNextdotjs, SiVercel, SiVite, SiReactrouter, SiNetlify, SiStyledcomponents, SiTypescript, SiFirebase, SiCreatereactapp } from 'react-icons/si'
 import { motion } from "framer-motion";
 
@@ -43,8 +43,12 @@ const Description = ({project}) => {
         return <FaReact className='text-lg' />
       case 'vue':
         return <FaVuejs className='text-lg' />
+      case 'vue-router':
+        return <FaVuejs className='text-lg' />
       case 'sanity':
         return <FaSpeakap className='text-lg' />
+      case 'sass':
+        return <FaSass className='text-lg' />
       default:
         break;
     }
@@ -61,6 +65,7 @@ const Description = ({project}) => {
       initial={{opacity: 0, y: 90}}
       whileInView={{opacity: 1, y: 0}}
       transition={{duration: 0.8}}
+      viewport={{ once: true }}
     >
       <div>
         <span className='text-slate-400 uppercase text-xs'>TOOLS STACK</span>

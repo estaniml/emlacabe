@@ -18,6 +18,7 @@ const Mobile = ({project}) => {
       initial={{opacity: 0, y: 70}}
       whileInView={{opacity: 1, y: 0}}
       transition={{duration: 0.6}}
+      viewport={{ once: true }}
     >
       <div>
         <span className='text-slate-400 uppercase text-xs'>RESPONSIVE DESIGN</span>
