@@ -34,6 +34,9 @@ import terrazasMobile from './public/projects/terrazas-mobile.png'
 import fmwDesktop from './public/projects/fmw-desktop.png'
 import fmwMobile from './public/projects/fmw-mobile.png'
 
+import hicsDesktop from './public/projects/hics-desktop.png'
+import hicsMobile from './public/projects/hics-mobile.png'
+
 import vueestateDesktop from './public/projects/vueestate-desktop.png'
 
 export const projecstList = [
@@ -104,6 +107,23 @@ export const projecstList = [
         },
         url: 'https://floy-myweather.netlify.app/',
         gitUrl: null,
+    },
+    {
+        id: 16,
+        title: 'HICS Capital',
+        description: 'Web for a client',
+        type: ['real', 'next'],
+        img: {
+            desktop: hicsDesktop,
+            mobile: hicsMobile
+        } ,
+        tools: {
+            html: [ 'html', 'material ui', 'styled components'],
+            js: [ 'javascript', 'react', 'redux'],
+            extra: [ 'git' ]
+        },
+        url: 'https://hicscapital.com/',
+        gitUrl: 'https://github.com/carlavgonzalez25/hics-landing',
     },
     {
         id: 14,
@@ -200,7 +220,7 @@ export const projecstList = [
             mobile: vitssanMobile
         } ,
         tools: {
-            html: [ 'html', 'styledcomponents', 'vite'],
+            html: [ 'html', 'tailwindcss', 'vite'],
             js: [ 'javascript', 'react'],
             extra: [ 'vercel', 'git' ]
         },

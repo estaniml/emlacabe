@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FaHtml5, FaReact, FaGitAlt, FaCss3Alt, FaVuejs, FaSpeakap, FaSass  } from 'react-icons/fa'
-import { SiTailwindcss, SiJavascript, SiNextdotjs, SiVercel, SiVite, SiReactrouter, SiNetlify, SiStyledcomponents, SiTypescript, SiFirebase, SiCreatereactapp } from 'react-icons/si'
+import { SiTailwindcss, SiJavascript, SiNextdotjs, SiVercel, SiVite, SiReactrouter, SiNetlify, SiStyledcomponents, SiTypescript, SiFirebase, SiCreatereactapp, SiMaterialui, SiRedux } from 'react-icons/si'
 import { motion } from "framer-motion";
 
 const Description = ({project}) => {
@@ -13,7 +13,7 @@ const Description = ({project}) => {
         return <FaHtml5 className='text-lg' />
       case 'vite':
         return <SiVite className='text-lg' />
-      case 'styledcomponents':
+      case 'styled components':
         return <SiStyledcomponents className='text-lg' />
       case 'tailwindcss':
         return <SiTailwindcss className='text-lg' />
@@ -49,6 +49,10 @@ const Description = ({project}) => {
         return <FaSpeakap className='text-lg' />
       case 'sass':
         return <FaSass className='text-lg' />
+      case 'material ui':
+        return <SiMaterialui className='text-lg' />
+      case 'redux':
+        return <SiRedux className='text-lg' />
       default:
         break;
     }
