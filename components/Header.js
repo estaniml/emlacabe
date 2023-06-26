@@ -6,9 +6,12 @@ import { AiOutlineMenu, AiOutlineClose }  from 'react-icons/ai'
 import { motion } from "framer-motion"
 import { useContext } from "react"
 import { LangContext } from "../context/LangContext"
+
 const Header = ({menu, setMenu}) => {
 
     const { t, locale, changeLanguage } = useContext(LangContext)
+
+    
 
   return (
     <header className="fixed top-0 w-full bg-black/40 z-50 backdrop-filter backdrop-blur-2xl">

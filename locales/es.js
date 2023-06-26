@@ -2,7 +2,8 @@ const es = {
     navbar: {
         about: 'Sobre mí',
         projects: 'Proyectos',
-        contact: 'Contactame'
+        contact: 'Contactame',
+        language: 'Idioma'
     },
     home: {
         title: 'Sobre mí',

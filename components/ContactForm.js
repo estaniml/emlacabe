@@ -33,7 +33,7 @@ const ContactForm = ({setStatusMsg}) => {
               }, 9000);
           });
           form.current.reset();
-      };
+    };
 
   return (
     <motion.form 

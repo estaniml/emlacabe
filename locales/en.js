@@ -2,7 +2,8 @@ const en = {
     navbar: {
         about: 'About me',
         projects: 'Projects',
-        contact: 'Get in touch'
+        contact: 'Get in touch',
+        language: 'Language'
     },
     home: {
         title: 'About me',
