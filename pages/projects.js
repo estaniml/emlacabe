@@ -64,7 +64,7 @@ const Projects = () => {
 
   return (
     <Layout page='Projects'>
-      <PageTitle top={top}>{t.projects.title}.</PageTitle>
+      <PageTitle top={top}>{t.projects.title}</PageTitle>
 
       <ul className="flex justify-center items-center gap-4 px-4 mb-6 text-sm lg:text-[16px] overflow-x-scroll lg:overflow-x-hidden pl-12 pb-6">
         <li 

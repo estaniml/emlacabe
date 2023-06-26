@@ -6,7 +6,7 @@ const es = {
         language: 'Idioma'
     },
     home: {
-        title: 'Sobre mí',
+        title: 'Sobre mí .',
         profile: 'Perfil',
         job: 'Desarrollador Frontend',
         profileDescription: 'Me considero una persona curiosa y dedica que siempre busca superar sus limites. Me encuentro muy motivado cuando trabajo en cosas que amo. Busco alcanzar la excelencia apartir de aprender de mis errores y cambios como una manera de crecer. Me gusta trabajar en equipo!',
@@ -32,7 +32,7 @@ const es = {
         download: 'Descargar',
     },
     projects: {
-        title: 'Mis Proyectos',
+        title: 'Mis Proyectos .',
         all: 'Todos',
         realWebs: 'Reales',
         projects: 'Proyectos',
@@ -44,7 +44,7 @@ const es = {
         showLessBtn: 'Mostrar menos'
     },
     contact: {
-        title: 'Contáctate',
+        title: 'Contáctate .',
         subtitle: 'Tenés alguna pregunta o propuesta? Adelante ',
         socialNetworks: 'Contactame a través de mis redes sociales',
         emailme: 'O enviame un email a',

@@ -16,9 +16,9 @@ export default function Home() {
 
   return (
     <Layout page='Frontend Developer'>
-      <PageTitle>{t.home.title}.</PageTitle>
+      <PageTitle>{t.home.title}</PageTitle>
 
-      <div className="mt-10 xl:mt-20 grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-2 gap-6 xl:gap-10">
+      <div className="mt-10 grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-2 gap-6 xl:gap-10">
         
         <Profile />
         

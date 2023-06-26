@@ -23,7 +23,7 @@ const Contact = () => {
   return (
     <Layout page='Get in touch!'>
         
-        <PageTitle>{t.contact.title}.</PageTitle>
+        <PageTitle>{t.contact.title}</PageTitle>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
 

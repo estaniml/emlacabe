@@ -6,7 +6,7 @@ const en = {
         language: 'Language'
     },
     home: {
-        title: 'About me',
+        title: 'About me .',
         profile: 'Profile',
         job: 'Frontend Developer',
         profileDescription: 'I consider myself a dedicated and curious person who always strives to push his limits. I am passionate and highly motivated when I take care of the things I love to do. I work to achieve excellence learning from my mistakes and changes as growth opportunities. I enjoy working collaboratively!',
@@ -32,7 +32,7 @@ const en = {
         download: 'Download',
     },
     projects: {
-        title: 'My Projects',
+        title: 'My Projects .',
         all: 'All',
         realWebs: 'Real',
         projects: 'Projects',
@@ -44,7 +44,7 @@ const en = {
         showLessBtn: 'Show less'
     },
     contact: {
-        title: 'Get in touch',
+        title: 'Get in touch .',
         subtitle: 'Got a question or proposal. Go a head',
         socialNetworks: 'Contact me throw my social networks',
         emailme: 'Or just email me to',
