@@ -1,10 +1,13 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { FaGraduationCap } from 'react-icons/fa'
 import { motion } from "framer-motion";
+import { LangContext } from '../../context/LangContext';
 
 const Education = () => {
 
   const [hover, setHover] = useState(true)
+
+  const { t  } = useContext(LangContext)
 
   return (
     <motion.div 
@@ -19,26 +22,26 @@ const Education = () => {
       transition={{duration: 0.9}}
     >
         <div className="flex justify-between items-center text-slate-300">
-          <h1 className='text-2xl uppercase font-bold'>Education</h1>
+          <h1 className='text-2xl uppercase font-bold'>{t.home.education}</h1>
           <FaGraduationCap className='text-4xl' />
         </div>
         <div className="mt-4">
           <p>2010-2015</p>
-          <p>High School.</p>
+          <p>{t.home.highschool}.</p>
 
           <p className={ hover ? 'h-6 text-slate-300 overflow-hidden transition-all duration-200 ease-linear' : 'h-0 overflow-hidden transition-all duration-200 ease-linear'}>Escuela del CAE</p>
         </div>
 
         <div className="mt-1">
           <p>2017-2020 * Unfinished</p>
-          <p>Architecture & Design</p>
+          <p>{t.home.architecture}</p>
 
           <p className={ hover ? 'h-8 text-slate-300 overflow-hidden transition-all duration-200 ease-linear' : 'h-0 overflow-hidden transition-all duration-200 ease-linear'}>Universidad Nacional del Litoral.</p>
         </div>
 
         <div className="mt-1">
           <p>2021-now</p>
-          <p>Business Managment</p>
+          <p>{t.home.business}</p>
 
           <p className={ hover ? 'h-8 text-slate-300 overflow-hidden transition-all duration-200 ease-linear' : 'h-0 overflow-hidden transition-all duration-200 ease-linear'}>Universidad Empresarial Siglo 21.</p>
         </div>

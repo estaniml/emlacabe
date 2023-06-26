@@ -4,9 +4,11 @@ import Link from "next/link"
 import me from "../public/me.png"
 import { AiOutlineMenu, AiOutlineClose }  from 'react-icons/ai'
 import { motion } from "framer-motion"
-
+import { useContext } from "react"
+import { LangContext } from "../context/LangContext"
 const Header = ({menu, setMenu}) => {
 
+    const { t, locale, changeLanguage } = useContext(LangContext)
 
   return (
     <header className="fixed top-0 w-full bg-black/40 z-50 backdrop-filter backdrop-blur-2xl">
@@ -48,14 +50,14 @@ const Header = ({menu, setMenu}) => {
                         initial={{opacity: 0}}
                         animate={{opacity: 1}}
                         transition={{duration: 1.6}}
-                    >About</motion.p>
+                    >{t.navbar.about}</motion.p>
                 </Link>
                 <Link href='/projects'>
                     <motion.p className="text-sm font-bold text-slate-100/90 hover:text-indigo-600 transition-all ease-linear duration-150"
                         initial={{opacity: 0}}
                         animate={{opacity: 1}}
                         transition={{duration: 1.8}}
-                    >Projects</motion.p>
+                    >{t.navbar.projects}</motion.p>
                 </Link>
 
                 <Link href='/contact'>
@@ -65,9 +67,18 @@ const Header = ({menu, setMenu}) => {
                         animate={{y: 0}}
                         transition={{duration: 1}}
                     >
-                        Get in touch
+                        {t.navbar.contact}
                     </motion.button>
                 </Link>
+
+                <select
+                    onChange={changeLanguage}
+                    defaultValue={locale}
+                    className="text-white text-xs bg-transparent tracking-wide font-bold cursor-pointer"
+                >
+                    <option className="bg-black" value="en">EN</option>
+                    <option className="bg-black" value="es">ES</option>
+                </select>
             </nav>
         
             <div 

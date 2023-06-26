@@ -3,9 +3,14 @@ import { FaUserTie } from 'react-icons/fa'
 import { motion } from "framer-motion";
 import Link from "next/link"
 
+import { useContext } from "react";
+import { LangContext } from '../../context/LangContext';
+
 const Experience = () => {
 
     const [hover, setHover] = useState(false)
+
+    const { t  } = useContext(LangContext)
 
   return (
     <motion.div 
@@ -20,21 +25,21 @@ const Experience = () => {
         transition={{duration: 1}}
     >
         <div className="flex justify-between items-center text-slate-300">
-            <h1 className='text-2xl uppercase font-bold'>EXPERIENCE</h1>
+            <h1 className='text-2xl uppercase font-bold'>{t.home.experience}</h1>
             <FaUserTie className='text-4xl' />
         </div>
         <div className="mt-4">
             <p>2018-2020 (HICS Capital)</p>
-            <p>Architecture 3D Modeling & Rendering</p>
+            <p>{t.home.architectureXP}</p>
 
-            <p className={ hover ? 'h-12 text-slate-300 overflow-hidden transition-all duration-200 ease-linear' : 'h-0 overflow-hidden transition-all duration-200 ease-linea'}>I did all the 3D models and renders of the company.</p>
+            <p className={ hover ? 'h-12 text-slate-300 overflow-hidden transition-all duration-200 ease-linear' : 'h-0 overflow-hidden transition-all duration-200 ease-linea'}>{t.home.architectureDescription}.</p>
         </div>
 
         <div className="mt-2">
             <p>2022 - Now (Freelance)</p>
-            <p>Fronted Developer</p>
+            <p>{t.home.devXP}</p>
 
-            <p className={ hover ? 'h-12 text-slate-300 overflow-hidden transition-all duration-200 ease-linear' : 'h-0 overflow-hidden transition-all duration-200 ease-linea'}>I worked on projects for differents clients. <Link href='/projects' className="hover:underline">Go to /projects</Link></p>
+            <p className={ hover ? 'h-12 text-slate-300 overflow-hidden transition-all duration-200 ease-linear' : 'h-0 overflow-hidden transition-all duration-200 ease-linea'}>{t.home.devDescription}. <Link href='/projects' className="hover:underline">{t.home.devLink}</Link></p>
         </div>
     </motion.div>
   )

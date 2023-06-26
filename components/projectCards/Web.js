@@ -1,12 +1,15 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import Image from 'next/image'
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
 import { motion } from "framer-motion";
+import { LangContext } from '../../context/LangContext';
 
 const Web = ({project}) => {
 
     const [hover, setHover] = useState(false)
 
+    const { t  } = useContext(LangContext)
+  
   return (
     <motion.div 
         className={ hover ? 'border border-slate-100 relative bg-purple-800/40 md:col-span-2 rounded-md p-4 h-60 md:h-80 overflow-hidden transition-all duration-300 ease-linear'
@@ -20,7 +23,7 @@ const Web = ({project}) => {
         viewport={{ once: true }}
     >
        <div>
-            <span className='text-slate-400 uppercase text-xs md:text-sm'>{project?.description}</span>
+            <span className='text-slate-400 uppercase text-xs md:text-sm'>{project?.real ? t.projects.client : t.projects.project }</span>
             <div className='mt-1 flex justify-between items-center'>
                 <h1 className='font-bold text-xl md:text-2xl'>{project?.title}</h1>
                 <div className='flex items-center gap-4'>

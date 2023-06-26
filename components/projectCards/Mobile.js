@@ -1,11 +1,14 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import { motion } from "framer-motion";
+import { LangContext } from '../../context/LangContext';
 
 const Mobile = ({project}) => {
 
   const [hover, setHover] = useState(false)
+
+  const { t  } = useContext(LangContext)
 
   return (
     <motion.div 
@@ -21,7 +24,7 @@ const Mobile = ({project}) => {
       viewport={{ once: true }}
     >
       <div>
-        <span className='text-slate-400 uppercase text-xs'>RESPONSIVE DESIGN</span>
+        <span className='text-slate-400 uppercase text-xs'>{t.projects.responsive}</span>
         <a href={project?.url} target="_blank" rel="noreferrer" className='mt-1 flex justify-between items-center'>
           <h1 className='text-xl font-bold text-slate-300'>Mobile</h1>
           <FaExternalLinkAlt className='text-xl hover:scale-125 hover:text-teal-300 transition-all duration-150 ease-linear' />

@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import { FaLinkedin, FaGithubSquare, FaWhatsappSquare, FaCopy, FaCheck } from 'react-icons/fa'
 import { RiMailSendLine, RiArrowDownCircleLine } from 'react-icons/ri'
 import ContactForm from '../components/ContactForm';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import PopUp from '../components/PopUp';
 import PageTitle from '../components/PageTitle';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { LangContext } from '../context/LangContext';
 
 const Contact = () => {
     
@@ -15,12 +16,14 @@ const Contact = () => {
         show: false,
         text: ''
     })
+
+    const { t  } = useContext(LangContext)
     
 
   return (
     <Layout page='Get in touch!'>
         
-        <PageTitle>Get in touch.</PageTitle>
+        <PageTitle>{t.contact.title}.</PageTitle>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
 
@@ -30,7 +33,7 @@ const Contact = () => {
                     initial={{opacity: 0, }}
                     animate={{opacity: 1, }}
                     transition={{duration: 0.6}}
-                >Got a question or proposal. Go ahead →</motion.h2>
+                >{t.contact.subtitle} →</motion.h2>
 
                 
                 <motion.div 
@@ -40,7 +43,7 @@ const Contact = () => {
                     transition={{duration: 0.8}}
                 >
                     <p className='w-full rounded-lg text-center md:text-lg transition-all duration-150 ease-in-out'
-                    >Contact me throw my social networks</p>
+                    >{t.contact.socialNetworks}</p>
 
                     <div className='mt-2 flex justify-center items-center gap-4'>
                         <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/estanislao-martinez-lacabe-79a11b249/' className='relative' aria-label="My Linkedin Profile">
@@ -76,7 +79,7 @@ const Contact = () => {
                             ? 'absolute top-4 cursor-pointer right-6 text-slate-300 scale-100 transition-all duration-200 ease-out'
                             : 'absolute top-4 cursor-pointer right-6 text-slate-300 scale-0 transition-all duration-200 ease-out'} 
                         />
-                        <p className=' md:text-lg cursor-pointer'>Or just email me to</p>
+                        <p className=' md:text-lg cursor-pointer'>{t.contact.emailme}</p>
                         <p className='mt-2 flex items-center gap-2 justify-center cursor-pointer'><RiMailSendLine />emartinezlacabe@gmail.com</p>
                     </motion.div>
                 </CopyToClipboard>
@@ -94,7 +97,7 @@ const Contact = () => {
                     animate={{opacity: 1, }}
                     transition={{duration: 1}}
                 >
-                    <p>Or just email me to</p>
+                    <p>{t.contact.subtitle}</p>
                     <p className='mt-2 flex items-center gap-2 justify-center'><RiMailSendLine />emartinezlacabe@gmail.com</p>
                 </motion.button>
 
@@ -105,7 +108,7 @@ const Contact = () => {
                     transition={{duration: 0.8}}
                 >
                     <p className='w-full rounded-lg text-center transition-all duration-150 ease-in-out'
-                    >Contact me throw my social networks</p>
+                    >{t.contact.subtitle}</p>
 
                     <RiArrowDownCircleLine className='text-xl mx-auto mt-2' />
                 </motion.div>

@@ -43,7 +43,7 @@ export const projecstList = [
     {
         id: 10,
         title: 'Berduc Suites.',
-        description: 'Web for a client',
+        real: true,
         type: ['real', 'next'],
         img: {
             desktop: berducDesktop,
@@ -60,8 +60,8 @@ export const projecstList = [
     {
         id: 11,
         title: 'Fulbos',
-        description: 'Fullstack project',
-        type: ['project', 'next'],
+        real: 'Fullstack project',
+        type: [false, 'next'],
         img: {
             desktop: fulbosDesktop,
             mobile: fulbosMobile
@@ -77,7 +77,7 @@ export const projecstList = [
     {
         id: 12,
         title: 'Terrazas Urbanizacion',
-        description: 'Web for a client ',
+        real: 'Web for a client ',
         type: ['real', 'next'],
         img: {
             desktop: terrazasDesktop,
@@ -94,8 +94,8 @@ export const projecstList = [
     {
         id: 13,
         title: 'Weather API',
-        description: 'Project',
-        type: ['project', 'vue'],
+        real: false,
+        type: [false, 'vue'],
         img: {
             desktop: fmwDesktop,
             mobile: fmwMobile
@@ -111,7 +111,7 @@ export const projecstList = [
     {
         id: 16,
         title: 'HICS Capital',
-        description: 'Web for a client',
+        real: true,
         type: ['real', 'next'],
         img: {
             desktop: hicsDesktop,
@@ -128,7 +128,7 @@ export const projecstList = [
     {
         id: 14,
         title: 'Dr. Martinez Lacabe',
-        description: 'Web for a client',
+        real: true,
         type: ['real', 'next'],
         img: {
             desktop: gmlDesktop,
@@ -145,8 +145,8 @@ export const projecstList = [
     {
         id: 3,
         title: 'Basement Supply',
-        description: 'Company challenge',
-        type: ['project', 'react'],
+        real: 'Company challenge',
+        type: [false, 'react'],
         img: {
             desktop: bsDesktop,
             mobile: bsMobile
@@ -162,8 +162,8 @@ export const projecstList = [
     {
         id: 4,
         title: 'La Nacion',
-        description: 'Company challenge',
-        type: ['project', 'next'],
+        real: 'Company challenge',
+        type: [false, 'next'],
         img: {
             desktop: lnDesktop,
             mobile: lnMobile
@@ -179,8 +179,8 @@ export const projecstList = [
     {
         id: 5,
         title: 'Mini Game',
-        description: 'Practise project',
-        type: ['project', 'react'],
+        real: 'Practise project',
+        type: [false, 'react'],
         img: {
             desktop: gameDesktop,
             mobile: gameMobile
@@ -196,8 +196,8 @@ export const projecstList = [
     {
         id: 6,
         title: 'Airbnb Clone',
-        description: 'Practise project',
-        type: ['project', 'react'],
+        real: 'Practise project',
+        type: [false, 'react'],
         img: {
             desktop: airbnbDesktop,
             mobile: airbnbMobile
@@ -213,7 +213,7 @@ export const projecstList = [
     {
         id: 7,
         title: 'Vitssan Pharma',
-        description: 'Web for a client',
+        real: true,
         type: ['real', 'react'],
         img: {
             desktop: vitssanDesktop,
@@ -230,7 +230,7 @@ export const projecstList = [
     {
         id: 8,
         title: 'Tarragona Investments',
-        description: 'Web for a client / not finished',
+        real: 'Web for a client / not finished',
         type: ['real', 'react'],
         img: {
             desktop: tarragonaDesktop,
@@ -247,8 +247,8 @@ export const projecstList = [
     {
         id: 9,
         title: 'Alkemy',
-        description: 'Company Challenge',
-        type: ['project', 'react'],
+        real: 'Company Challenge',
+        type: [false, 'react'],
         img: {
             desktop: alkemyDesktop,
             mobile: alkemyMobile
@@ -264,8 +264,8 @@ export const projecstList = [
     {
         id: 15,
         title: 'Vue Real Estate',
-        description: 'Project',
-        type: ['project', 'vue'],
+        real: false,
+        type: [false, 'vue'],
         img: {
             desktop: vueestateDesktop,
             mobile: null

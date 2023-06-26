@@ -1,11 +1,14 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { FaHtml5, FaReact, FaGitAlt, FaCss3Alt, FaVuejs, FaSpeakap, FaSass  } from 'react-icons/fa'
 import { SiTailwindcss, SiJavascript, SiNextdotjs, SiVercel, SiVite, SiReactrouter, SiNetlify, SiStyledcomponents, SiTypescript, SiFirebase, SiCreatereactapp, SiMaterialui, SiRedux } from 'react-icons/si'
 import { motion } from "framer-motion";
+import { LangContext } from '../../context/LangContext';
 
 const Description = ({project}) => {
 
   const [hover, setHover] = useState(false)
+
+  const { t  } = useContext(LangContext)
 
   const setLogo = tool => {
     switch (tool) {
@@ -72,7 +75,7 @@ const Description = ({project}) => {
       viewport={{ once: true }}
     >
       <div>
-        <span className='text-slate-400 uppercase text-xs'>TOOLS STACK</span>
+        <span className='text-slate-400 uppercase text-xs'>{t.projects.tools}</span>
         <div className='mt-1 flex justify-between items-center'>
           <h1 className='font-bold text-xl text-slate-300'>Javascript</h1>
         </div>

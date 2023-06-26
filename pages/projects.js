@@ -6,6 +6,9 @@ import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion";
 import PageTitle from "../components/PageTitle"
 
+import { useContext } from "react";
+import { LangContext } from "../context/LangContext"
+
 const Projects = () => {
 
   const [tab, setTab] = useState({
@@ -57,35 +60,37 @@ const Projects = () => {
 
   }
 
+  const { t  } = useContext(LangContext)
+
   return (
     <Layout page='Projects'>
-      <PageTitle top={top}>My Projects.</PageTitle>
+      <PageTitle top={top}>{t.projects.title}.</PageTitle>
 
       <ul className="flex justify-center items-center gap-4 px-4 mb-6 text-sm lg:text-[16px] overflow-x-scroll lg:overflow-x-hidden pl-12 pb-6">
         <li 
           onClick={() => setTab({category: 'all', showAll: false})}  
           className={ tab.category === 'all' ? "text-slate-50 hover:text-teal-100 bg-indigo-600 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
-        >ALL</li>
+        >{t.projects.all}</li>
         <li 
           onClick={() => setTab({category: 'real', showAll: false})}  
           className={ tab.category === 'real' ? "text-slate-50 hover:text-teal-100 bg-indigo-600 rounded px-2 whitespace-nowrap	 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 whitespace-nowrap cursor-pointer"}
-        >REAL WEBS</li>
+        >{t.projects.realWebs}</li>
         <li 
           onClick={() => setTab({category: 'project', showAll: false})}  
           className={ tab.category === 'project' ? "text-slate-50 hover:text-teal-100 bg-indigo-600 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
-        >PROJECTS</li>
+        >{t.projects.projects}</li>
         <li 
           onClick={() => setTab({category: 'react', showAll: false})}  
           className={ tab.category === 'react' ? "text-slate-50 hover:text-teal-100 bg-sky-500 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
-        >REACT</li>
+        >React</li>
         <li 
           onClick={() => setTab({category: 'next', showAll: false})}  
           className={ tab.category === 'next' ? "text-slate-50 hover:text-teal-100 bg-gray-900 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
-        >NEXT</li>
+        >Next</li>
         <li 
           onClick={() => setTab({category: 'vue', showAll: false})}  
           className={ tab.category === 'vue' ? "text-slate-50 hover:text-teal-100 bg-emerald-600 rounded px-2 cursor-pointer" : "text-slate-100 hover:text-cyan-600 px-2 cursor-pointer"}
-        >VUE</li>
+        >Vue</li>
       </ul>
 
       { projects?.map( project => (
@@ -101,8 +106,8 @@ const Projects = () => {
           transition={{duration: 0.4}}
         >
           { tab.showAll 
-              ? <p className="flex items-center gap-2">Show less <AiFillMinusSquare /> </p>
-              : <p className="flex items-center gap-2">Show more <AiFillPlusSquare /> </p>
+              ? <p className="flex items-center gap-2">{t.projects.showMoreBtn} <AiFillMinusSquare /> </p>
+              : <p className="flex items-center gap-2">{t.projects.showLessBtn}<AiFillPlusSquare /> </p>
           } 
           
         </motion.button>  

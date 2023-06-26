@@ -1,11 +1,13 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { FaLaptopCode, FaStar } from 'react-icons/fa'
 import { motion } from "framer-motion";
+import { LangContext } from '../../context/LangContext';
 
 const IT = () => {
 
   const [hover, setHover] = useState(false)
-    
+
+  const { t  } = useContext(LangContext)
   
   return (
     <div 
@@ -25,7 +27,7 @@ const IT = () => {
         transition={{duration: 0.6}}
       >
         <div className="flex justify-between items-center text-slate-400">
-            <h1 className='text-2xl uppercase font-bold'>IT SKILLS</h1>
+            <h1 className='text-2xl uppercase font-bold'>{t.home.skills}</h1>
         <FaLaptopCode className='text-4xl' />
         </div>
 
@@ -58,7 +60,7 @@ const IT = () => {
           
           <div
             className='flex items-center' >
-            <p className='uppercase flex gap-1 items-center'><strong>Backend</strong> <small>(some knowledge)</small></p>
+            <p className='uppercase flex gap-1 items-center'><strong>Backend</strong> <small>({t.home.knowledge})</small></p>
           </div>
           
           <ul className={'my-4 text-sm transition-all duration-500 ease-in-out overflow-hidden grid grid-cols-2 gap-4 uppercase'}>

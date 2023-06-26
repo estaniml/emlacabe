@@ -2,9 +2,14 @@ import { useState } from 'react'
 import { FaLanguage } from 'react-icons/fa'
 import { motion } from "framer-motion";
 
+import { useContext } from "react";
+import { LangContext } from '../../context/LangContext';
+
 const Languages = () => {
 
     const [hover, setHover] = useState(false)
+
+    const { t  } = useContext(LangContext)
 
   return (
     <motion.div 
@@ -19,19 +24,19 @@ const Languages = () => {
             transition={{duration: 1}}
         >
         <div className="flex justify-between items-center text-slate-300">
-            <h1 className='text-2xl uppercase font-bold'>LANGUAGES</h1>
+            <h1 className='text-2xl uppercase font-bold'>{t.home.languages}</h1>
             <FaLanguage className='text-4xl' />
         </div>
         <div className="mt-4">
-            <p>SPANISH</p>
+            <p>{t.home.spanish}</p>
 
-            <p className='h-6 text-slate-300 overflow-hidden transition-all duration-200 ease-linear'>Native Level.</p>
+            <p className='h-6 text-slate-300 overflow-hidden transition-all duration-200 ease-linear'>{t.home.spanishLvl}.</p>
         </div>
 
         <div className="mt-2">
-            <p>ENGLISH</p>
+            <p>{t.home.english}</p>
 
-            <p className='h-6 text-slate-300 overflow-hidden transition-all duration-200 ease-linear'>B2 Level.</p>
+            <p className='h-6 text-slate-300 overflow-hidden transition-all duration-200 ease-linear'>{t.home.englishLvl}.</p>
         </div>
 
         <div className="mt-2">

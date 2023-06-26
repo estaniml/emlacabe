@@ -1,10 +1,13 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { FaUserAlt } from 'react-icons/fa'
 import { motion } from "framer-motion";
+import { LangContext } from '../../context/LangContext';
 
 const Profile = () => {
 
   const [hover, setHover] = useState(false)
+
+  const { t  } = useContext(LangContext)
 
   return (
     <motion.div 
@@ -19,14 +22,14 @@ const Profile = () => {
       transition={{duration: 0.3}}
     >
         <div className="flex justify-between items-center text-slate-300">
-            <h1 className='text-2xl uppercase font-bold'>Profile</h1>
+            <h1 className='text-2xl uppercase font-bold'>{t.home.profile}</h1>
             <FaUserAlt className='text-4xl' />
         </div>
         <div className="mt-4">
-            <p>I&apos;m Frontend developer.</p>
-            <p>I consider myself a very passionate, disciplined and Iam highly motivated when I am working on things that I love to do.</p>
+            <p className='text-teal-400'>{t.home.job}.</p>
+            <p>{t.home.profileDescription}.</p>
 
-            <p className={ hover ? 'h-12 text-slate-300 overflow-hidden transition-all duration-200 ease-linear' : 'h-0 overflow-hidden transition-all duration-200 ease-linea'}>I’m always eager to learn and practise new things.</p>
+            <p className={ hover ? 'h-12 text-slate-300 overflow-hidden transition-all duration-200 ease-linear' : 'h-0 overflow-hidden transition-all duration-200 ease-linea'}>{t.home.profileSpan}.</p>
         </div>
     </motion.div>
   )
