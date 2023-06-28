@@ -60,8 +60,8 @@ export const projecstList = [
     {
         id: 11,
         title: 'Fulbos',
-        real: 'Fullstack project',
-        type: [false, 'next'],
+        real: false,
+        type: ['project', 'next'],
         img: {
             desktop: fulbosDesktop,
             mobile: fulbosMobile
@@ -76,8 +76,8 @@ export const projecstList = [
     },
     {
         id: 12,
-        title: 'Terrazas Urbanizacion',
-        real: 'Web for a client ',
+        title: 'Urbanizacion Terrazas ',
+        real: true,
         type: ['real', 'next'],
         img: {
             desktop: terrazasDesktop,
@@ -95,7 +95,7 @@ export const projecstList = [
         id: 13,
         title: 'Weather API',
         real: false,
-        type: [false, 'vue'],
+        type: ['project', 'vue'],
         img: {
             desktop: fmwDesktop,
             mobile: fmwMobile
@@ -145,8 +145,8 @@ export const projecstList = [
     {
         id: 3,
         title: 'Basement Supply',
-        real: 'Company challenge',
-        type: [false, 'react'],
+        real: false,
+        type: ['project', 'react'],
         img: {
             desktop: bsDesktop,
             mobile: bsMobile
@@ -162,8 +162,8 @@ export const projecstList = [
     {
         id: 4,
         title: 'La Nacion',
-        real: 'Company challenge',
-        type: [false, 'next'],
+        real: false,
+        type: ['project', 'next'],
         img: {
             desktop: lnDesktop,
             mobile: lnMobile
@@ -179,8 +179,8 @@ export const projecstList = [
     {
         id: 5,
         title: 'Mini Game',
-        real: 'Practise project',
-        type: [false, 'react'],
+        real: false,
+        type: ['project', 'react'],
         img: {
             desktop: gameDesktop,
             mobile: gameMobile
@@ -196,8 +196,8 @@ export const projecstList = [
     {
         id: 6,
         title: 'Airbnb Clone',
-        real: 'Practise project',
-        type: [false, 'react'],
+        real: false,
+        type: ['project', 'react'],
         img: {
             desktop: airbnbDesktop,
             mobile: airbnbMobile
@@ -230,7 +230,7 @@ export const projecstList = [
     {
         id: 8,
         title: 'Tarragona Investments',
-        real: 'Web for a client / not finished',
+        real: false,
         type: ['real', 'react'],
         img: {
             desktop: tarragonaDesktop,
@@ -247,8 +247,8 @@ export const projecstList = [
     {
         id: 9,
         title: 'Alkemy',
-        real: 'Company Challenge',
-        type: [false, 'react'],
+        real: false,
+        type: ['project', 'react'],
         img: {
             desktop: alkemyDesktop,
             mobile: alkemyMobile
@@ -265,7 +265,7 @@ export const projecstList = [
         id: 15,
         title: 'Vue Real Estate',
         real: false,
-        type: [false, 'vue'],
+        type: ['project', 'vue'],
         img: {
             desktop: vueestateDesktop,
             mobile: null
