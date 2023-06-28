@@ -97,7 +97,7 @@ const Contact = () => {
                     animate={{opacity: 1, }}
                     transition={{duration: 1}}
                 >
-                    <p>{t.contact.subtitle}</p>
+                    <p>{t.contact.emailme}</p>
                     <p className='mt-2 flex items-center gap-2 justify-center'><RiMailSendLine />emartinezlacabe@gmail.com</p>
                 </motion.button>
 
@@ -108,7 +108,7 @@ const Contact = () => {
                     transition={{duration: 0.8}}
                 >
                     <p className='w-full rounded-lg text-center transition-all duration-150 ease-in-out'
-                    >{t.contact.subtitle}</p>
+                    >{t.contact.socialNetworks}</p>
 
                     <RiArrowDownCircleLine className='text-xl mx-auto mt-2' />
                 </motion.div>
