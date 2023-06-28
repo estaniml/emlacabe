@@ -11,8 +11,8 @@ const ResponsiveMenu = ({menu}) => {
   return (
     <div 
       className={menu 
-          ? 'flex flex-col uppercase font-bold text-xl gap-8 px-4 py-12 z-10 fixed top-16 left-0 h-full w-full bg-black/40 backdrop-blur-lg text-slate-300 transition-all duration-150 ease-linear'
-          : 'flex flex-col justify-between items-center uppercase font-bold text-xs z-10 fixed top-16 left-0 h-0 overflow-hidden w-full bg-black/90 backdrop-blur-lg text-slate-300 transition-all duration-150 ease-linear'
+        ? 'flex flex-col uppercase font-bold text-xl gap-8 px-4 py-12 z-10 fixed top-16 left-0 h-full w-full bg-black/40 backdrop-blur-lg text-slate-300 transition-all duration-150 ease-linear'
+        : 'flex flex-col  uppercase font-bold text-xl gap-8 px-4 py-0 z-10 fixed top-0 left-0 h-0 overflow-hidden w-full bg-black/90 backdrop-blur-lg text-slate-300 transition-all duration-150 ease-linear'
       }
     >
       <Link href='/'>
