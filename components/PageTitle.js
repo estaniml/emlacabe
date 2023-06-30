@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { motion } from "framer-motion";
 
 const PageTitle = ({children, top}) => {
 
@@ -24,10 +23,10 @@ const PageTitle = ({children, top}) => {
 
   return (
     <div className="mt-28 lg:mt-28 lg:mb-10 h-[6rem] lg:h-[10rem] overflow-hidden" ref={top}>
-        <h1 
-          className="text-5xl lg:text-[8rem] xl:text-[9rem] tracking-wide font-bold text-slate-500  leading-[4rem] lg:leading-[8rem] xl:leading-[10rem] whitespace-nowrap"
-        >{displayedText ? displayedText : children}</h1>
-      </div>
+      <h1 
+        className="text-5xl lg:text-[8rem] xl:text-[9rem] tracking-wide font-bold text-slate-500  leading-[4rem] lg:leading-[8rem] xl:leading-[10rem] whitespace-nowrap"
+      >{displayedText ? displayedText : ''}</h1>
+    </div>
   )
 }
 

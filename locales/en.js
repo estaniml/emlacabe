@@ -48,10 +48,10 @@ const en = {
         subtitle: 'Got a question or proposal. Go a head',
         socialNetworks: 'Contact me throw my social networks',
         emailme: 'Or just email me to',
-        name: 'Tu name',
-        email: 'Tu email',
-        message: 'Tu message',
-        send: 'send',
+        name: 'Your name',
+        email: 'Your email',
+        message: 'Your message',
+        send: 'Send',
         successMsg: 'Thank you! I will answer ASAP',
         errorMsg: 'Error! Try again later'
     }
