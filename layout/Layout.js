@@ -33,7 +33,7 @@ const Layout = ({children, page}) => {
         <title>{`${page} - Estanislao M. Lacabe`}</title>
         <meta name="description" content="Frontend Developer. Portfolio web" />
         <meta name="author" content="Estanislao Martinez Lacabe"></meta>
-        <meta property="og:image" content="/me.png" />
+        <meta property="og:image" content="/mlogo.png" />
       </Head>
 
       <Header setMenu={setMenu} menu={menu} />
