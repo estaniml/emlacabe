@@ -9,7 +9,7 @@ const es = {
         title: 'Sobre mí .',
         profile: 'Perfil',
         job: 'Desarrollador Frontend',
-        profileDescription: 'Me considero una persona curiosa y dedica que siempre busca superar sus limites. Me encuentro muy motivado cuando trabajo en cosas que amo. Busco alcanzar la excelencia apartir de aprender de mis errores y cambios como una manera de crecer. Me gusta trabajar en equipo!',
+        profileDescription: 'Me considero una persona curiosa y dedicada que siempre busca superar sus limites. Busco alcanzar la excelencia apartir de aprender de mis errores y cambios como una manera de crecer. Me gusta trabajar en equipo!',
         profileSpan: 'Estoy siempre dispuesto a aprender y practicar cosas nuevas',
         skills: 'Habilidades IT',
         knowledge: 'Conocimiento',

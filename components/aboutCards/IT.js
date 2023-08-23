@@ -43,12 +43,12 @@ const IT = () => {
           <ul className={'text-sm absolute left-6 top-14 opacity-100 transition-all duration-500 ease-in-out overflow-hidden grid grid-cols-2 gap-4 uppercase'}>
             <li>HTML</li>
             <li>Javascript</li>
-            <li className='flex items-center gap-2'>Tailwind CSS <FaStar /></li>
-            <li className='flex items-center gap-2'>Next <FaStar /></li>
-            <li className='flex items-center gap-2'>Styled C. <FaStar /></li>
+            <li className='flex items-center gap-2'>Tailwind CSS </li>
+            <li className='flex items-center gap-2'>Next </li>
+            <li className='flex items-center gap-2'>Styled C. </li>
             <li>Typescript</li>
             <li>Bootstrap</li>
-            <li className='flex items-center gap-2'>React <FaStar /></li>
+            <li className='flex items-center gap-2'>React </li>
             <li className='flex items-center gap-2'>Vue </li>
             <li>Material UI</li>
           </ul>
@@ -68,19 +68,11 @@ const IT = () => {
             <li>Express</li>
             <li>Mongodb</li>
             <li>Firebase</li>
-            <li>AWS Amplify</li>
-            <li>Strapi</li>
+            <li>Prisma ORM</li>
+            <li>Vercel Postgre</li>
             <li>Sanity</li>
           </ul>
           
-          <div
-            className='flex items-center' >
-            <p className='uppercase font-bold'>Extra</p>
-          </div>
-          
-          <ul className={'mt-4 text-sm  opacity-100 transition-all duration-500 ease-in-out overflow-hidden grid grid-cols-2 gap-4 uppercase'}>
-            <li>Git</li>
-          </ul>
         </div>
       
       </motion.div>

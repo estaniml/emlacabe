@@ -99,15 +99,15 @@ const Projects = () => {
 
       { more && 
         <motion.button 
-          className="flex rounded-full items-center gap-2 justify-center mx-auto mt-12 w-40 h-12 font-bold relative tracking-wide text-indigo-400 hover:shadow-lg hover:shadow-indigo-600/30 transition-all ease-linear duration-400"
+          className="flex rounded-full items-center gap-2 justify-center mx-auto mt-12 w-48 h-12 font-bold relative tracking-wide text-indigo-400 hover:shadow-lg hover:shadow-indigo-600/30 transition-all ease-linear duration-400"
           onClick={showMoreLess}
           initial={{opacity: 0, y: 50}}
           whileInView={{opacity: 1, y: 0}}
           transition={{duration: 0.4}}
         >
           { tab.showAll 
-              ? <p className="flex items-center gap-2">{t.projects.showMoreBtn} <AiFillMinusSquare /> </p>
-              : <p className="flex items-center gap-2">{t.projects.showLessBtn}<AiFillPlusSquare /> </p>
+              ? <p className="flex items-center gap-2">{t.projects.showLessBtn} <AiFillMinusSquare /> </p>
+              : <p className="flex items-center gap-2">{t.projects.showMoreBtn}<AiFillPlusSquare /> </p>
           } 
           
         </motion.button>  
