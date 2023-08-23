@@ -59,7 +59,7 @@ export const projecstList = [
     },
     {
         id: 11,
-        title: 'Fulbos',
+        title: 'Futbol Webapp Fullstack',
         real: false,
         type: ['project', 'next'],
         img: {
